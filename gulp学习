@@ -1,3 +1,4 @@
 1.修改当前开发环境(设置为 product)
-  在package.json中的script里面添加命令：
-  set NODE_ENV=production node build.js
+  通过 cross-env 来设置状态
+  npm install --save-dev cross-env
+  cross-env NODE_ENV=production node build.js
