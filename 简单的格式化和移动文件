@@ -1,0 +1,31 @@
+const { src, dest } = require('gulp');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const uglifycss = require('gulp-uglifycss');
+const filter = require('gulp-filter');
+const path = require('path');
+const lec = require('gulp-line-ending-corrector');
+
+exports.default = function() {
+    const htmlFilter = filter(['**/*.html', '**/*.shtml', '**/*.htm'], { restore: true });
+    const jsFilter = filter('**/*.js', { restore: true });
+    const cssFilter = filter("**/*.css", { restore: true });
+
+    return src(['src/**', 'src/*'])
+        .pipe(htmlFilter)
+        .pipe(lec())
+        .pipe(htmlFilter.restore)
+        // .pipe(src('vendor/*.js'))
+        .pipe(jsFilter)
+        .pipe(uglify()) //压缩js
+        .pipe(lec())
+        .pipe(jsFilter.restore)
+        .on('error', function(err) {
+            console.log(err.toString());
+        })
+        .pipe(cssFilter)
+        .pipe(uglifycss()) //压缩css
+        .pipe(lec())
+        .pipe(cssFilter.restore)
+        .pipe(dest('dist/'));
+}
