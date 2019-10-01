@@ -5,13 +5,28 @@ const uglifycss = require('gulp-uglifycss');
 const filter = require('gulp-filter');
 const path = require('path');
 const lec = require('gulp-line-ending-corrector');
+const i18n = require('gulp-ziey-i18n');
 
 exports.default = function() {
     const htmlFilter = filter(['**/*.html', '**/*.shtml', '**/*.htm'], { restore: true });
     const jsFilter = filter('**/*.js', { restore: true });
     const cssFilter = filter("**/*.css", { restore: true });
 
+
     return src(['src/**', 'src/*'])
+        .pipe(
+            i18n({
+                lang: 'en',
+                path: 'src/en.po',
+                template: {
+                    options: {
+                        openTag: '{#',
+                        closeTag: '#}'
+                    }
+                },
+                cleanCache: true
+            })
+        )
         .pipe(htmlFilter)
         .pipe(lec())
         .pipe(htmlFilter.restore)
