@@ -14,6 +14,7 @@ exports.default = function() {
 
 
     return src(['src/**', 'src/*'])
+    //多语言替换
         .pipe(
             i18n({
                 lang: 'en',
