@@ -2,3 +2,10 @@
   通过 cross-env 来设置状态
   npm install --save-dev cross-env
   cross-env NODE_ENV=production node build.js
+  
+2.Cannot find module '@babel/core' 解决
+  如何安装特定版本的babel:npm install gulp-babel@7 --save-dev
+  安装：
+  npm install gulp-babel
+  npm install babel-preset-env
+  npm install babel-core
