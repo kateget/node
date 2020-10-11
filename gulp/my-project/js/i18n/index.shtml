@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Official PUBG on mobile</title>
+    <meta name="Keywords" content="PUBG Mobile,PlayerUnknown's Battlegrounds Mobile,pubg mobile official,pubg mobile website,pubg mobile official website,pubg mobile multiplayer,pubg mobile game,pubg mobile download,pubg mobile update,pubg mobile ios,pubg mobile android"
+    />
+    <meta property="og:url" content="https://www.pubgmobile.com" />
+    <meta property="og:site_name" content="Official PUBG on mobile">
+    <meta property="og:title" content="Official PUBG on mobile">
+    <meta property="og:description" content="PUBG Mobile is the FREE battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing.">
+    <!--#include virtual="inc/header.shtml"-->
+</head>
+
+<body>
+    <script type="text/javascript">
+        var current_page = 'index';
+    </script>
+    <!--#include virtual="inc/fbshare.html"-->
+    <!--#include virtual="inc/nav.html"-->
+    <div class="wrap {# LANG #}">
+        <div class="header">
+            <div class="head_video">
+                <div id="mainPlayer" style="width:1px;height:1px;"></div>
+            </div>
+            <div class="container">
+                <h2 class="head_slogn">PLAYERUNKNOWNS BATTLEGROUNDS MOBILE</h2>
+                <p class="hd_btn c down-group">
+                    <% 
+                        var lang = '{# LANG #}';
+                        if(lang == 'en-US') {
+                        %>
+                        <a href="https://app.adjust.com/4yxckw" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_app'});" class="btn_app spr">Download on the App Store</a>
+                        <a href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" class="btn_apk spr apk-btn" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+                    APK Download
+                    <span class="down_tip">
+                            <span class="title">{# APK size: 159 MB #}</span>
+                            <span class="title">{# Download time: <em>[1 minute]</em> #}</span>
+                        </span>
+                </a>
+                        <% } else { %>
+                            <a href="https://app.adjust.com/ndvddx1" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_app'});" class="btn_app spr">Download on the App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rekoo.pubgm" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_google'});" class="btn_google spr">Get it on Google Play</a>
+                            <a href="https://sim.gpubgm.com/89kignb_Android_IG0160_No25_0.16.0.11460_Shipping_Google_TW.shell.signed_eFI.apk" class="btn_apk spr apk-btn" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+                    APK Download
+                    
+                </a>
+                            <% } %>
+                </p>
+                <p class="flip">
+                    <i class="flip_icon spr"></i>
+                    <em>SCROLL DOWN</em>
+                </p>
+                <p class="float_link">
+                    <a href="https://www.facebook.com/PUBGMobile" class="facebook" target="_blank" onclick="gtag('event', 'x_jump', {'event_category': 'website','event_label': 'pc_header_facebook'});">Facebook</a>
+                    <a href="https://twitter.com/PUBGMOBILE" class="twitter" target="_blank" onclick="gtag('event', 'x_jump', {'event_category': 'website','event_label': 'pc_header_twitter'});">Twitter</a>
+                    <a href="https://www.youtube.com/pubgmobile" class="youtube" target="_blank" onclick="gtag('event', 'x_jump', {'event_category': 'website','event_label': 'pc_header_youtube'});">Youtube</a>
+                    <a href="https://www.instagram.com/pubgmobile" class="ins" target="_blank" onclick="gtag('event', 'x_jump', {'event_category': 'website','event_label': 'pc_header_instagram'});">Instagram</a>
+                    <a href="https://vk.com/pubgmobile" class="vk" target="_blank" onclick="gtag('event', 'x_jump', {'event_category': 'website','event_label': 'pc_btn_vk'});">VK</a>
+                </p>
+            </div>
+            <div class="hd_bot"></div>
+        </div>
+        <div class="game_show">
+            <div class="container">
+                <div class="game_slide">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="images/slide_img1.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="images/slide_img2.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="images/slide_img3.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="images/slide_img4.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="images/slide_img5.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img1.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img2.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img3.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img4.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img5.jpg" width="999" height="562" alt="" />
+                            </li>
+                            <!-- <li class="swiper-slide TW">
+						<img src="images/slide_tw_img6.jpg" width="999" height="562" alt="" />
+					</li>   -->
+                            <li class="swiper-slide TW">
+                                <img src="images/slide_tw_img7.jpg" width="999" height="562" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button-prev spr" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_header_prev'});"></div>
+                    <div class="swiper-button-next spr" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_header_next'});"></div>
+                </div>
+            </div>
+        </div>
+        <div class="par_community">
+            <div class="container">
+                <div class="community_ct c">
+                    <% 
+					var lang = '{# LANG #}';
+					if(lang == 'en-US') {
+				    %>
+                        <div class="offic_com">
+                            <h3 class="com_tit"><i class="com_icon1 spr"></i>LIVE</h3>
+                            <p class="com_main">
+                                <a class="twitter-timeline" href="https://twitter.com/PUBGMobileLive" data-height="inherit" data-chrome="noheader nofooter" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_twitter'});"></a>
+                            </p>
+                        </div>
+                        <div class="partner_com">
+                            <h3 class="com_tit"><i class="com_icon2 spr"></i>OFFICIAL</h3>
+                            <p class="com_main">
+                                <a class="twitter-timeline" href="https://twitter.com/PUBGMOBILE" data-height="inherit" data-chrome="noheader nofooter" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_twitter'});"></a>
+                            </p>
+                        </div>
+                        <div class="facebook_com">
+                            <h3 class="com_tit"><i class="com_icon3 spr"></i>OFFICIAL</h3>
+                            <div class="com_main fb-page" data-href="https://www.facebook.com/PUBGMOBILE/" data-tabs="timeline" data-width="442" data-height="784" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/PUBGMOBILE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PUBGMOBILE/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_facebook'});">PUBG MOBILE</a></blockquote>
+                            </div>
+                        </div>
+                        <% } else { %>
+
+                            <% } %>
+                                <!-- <div class="facebook_com tw_com">
+					<h3 class="com_tit"><i class="com_icon3 spr"></i>OFFICIAL</h3>
+						<div class="com_main fb-page" data-href="https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL" data-tabs="timeline" data-width="1666" data-height="784" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PUBGMOBILE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PUBGMOBILE/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_facebook'});">PUBG MOBILE</a></blockquote></div>
+				</div> -->
+                </div>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js" integrity="sha256-Pl63iFzVinaVFc3QqrQvq3DimF1feP6Wqekm5jTabXo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/{# LANG #}/js/index.js"></script>
+    <!--#include virtual="inc/foot.html"-->
+</body>
+
+</html>

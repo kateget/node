@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Official PUBG on mobile</title>
+<meta name="Keywords" content="pubg mobile news,pubg news"/>
+<meta property="og:url" content="https://www.pubgmobile.com">
+<meta property="og:site_name" content="Official PUBG on mobile">
+<meta property="og:title" content="Official PUBG on mobile">
+<meta property="og:description" content="Read all the latest news about PUBG Mobile, featuring exclusive updates from the dev team!">
+<!--#include virtual="inc/header.shtml"-->
+<link rel="stylesheet" type="text/css" href="css/news.css">
+<!--#set var="lang" value="{# LANG #}" -->
+</head>
+<body>
+<script type="text/javascript">
+	var current_page = 'news';
+</script>
+<!--#include virtual="inc/fbshare.html"-->	
+<!--#include virtual="inc/nav.html"-->
+<div class="wrap">
+	<div class="page_top news_top">
+		<h2 class="news_tit spr_page">NEWS</h2>
+	</div>
+	<div class="news_main">
+		<ul class="tab_nav c">
+			<li class="on">
+				<a href="javascript:;">ALL</a>
+			</li>
+			<li>
+				<a href="javascript:;">PATCH NOTES</a>
+			</li>
+			<li>
+				<a href="javascript:;">BAN NOTICE</a>
+			</li>
+		</ul>
+		<div class="main_ct">
+			<div class="tab_type">
+				<ul class="news_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.news.allnews) %>"-->
+				</ul>
+			</div>
+			<div class="tab_type" style="display: none;">
+				<ul class="news_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.news.patch_notes) %>"-->
+				</ul>
+			</div>
+			<div class="tab_type" style="display: none;">
+				<ul class="news_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.news.announcements) %>"-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/{# LANG #}/js/news.js"></script>
+<!--#include virtual="inc/foot.html"-->
+</body>
+</html>
+

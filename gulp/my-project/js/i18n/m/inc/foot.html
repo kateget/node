@@ -1,0 +1,90 @@
+<script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        setTimeout(function() {
+            $('body').addClass('mclass');
+        }, 1000);
+    }
+</script>
+<!-- footer -->
+<!--#include virtual="/common/inc/footer.shtml"-->
+<!-- Facebook Pixel Code -->
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2213620032242828');
+    fbq('track', "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2213620032242828&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    /*
+        function gtag_report_conversion(url) { 
+        	var callback = function () { 
+        		if (typeof(url) != 'undefined') { 
+        			window.location = url; 
+        		} 
+        	}; 
+        	gtag('event', 'conversion', { 
+        		'send_to': 'AW-811953483/O9lOCNiMlIoBEMvalYMD',
+        		'event_callback': callback 
+        	}); 
+        	return false; 
+        } 
+
+        var btn_apk = document.getElementsByClassName('btn_apk')[0];
+
+        btn_apk.onclick = function(){
+            gtag_report_conversion();
+        }
+        /**/
+    $(document).on("touchstart", ".nav_list li", function() {
+        $(this).find(".event_second").slideToggle();
+    });
+
+    $(document).on("touchstart", ".btn_list", function() {
+        if ($("#btnNavSlide").is(".G_close")) {
+            $("#btnNavSlide").trigger("touchstart");
+        }
+    })
+    $(document).on("touchstart", "#btnNavSlide", function() {
+        $(".down_list").hide();
+    })
+
+
+    function judgeModel() {
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+            //安卓手机
+            $(".item_down.app").hide();
+            $(".btn_app").hide();
+            $(".btn_google").hide();
+        } else {
+            //苹果手机
+            $(".item_down.apk").hide();
+            $(".btn_apk").hide();
+
+        }
+    }
+    judgeModel();
+</script>
+<!--#include virtual="/{# LANG #}/inc/stats.shtml"-->

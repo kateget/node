@@ -1,0 +1,25 @@
+.wrap{
+	width: 12rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.cls:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+@font-face{
+	font-family: TTSsanaiR;
+	src:url("../font/TTSsanaiR.ttf");
+	src: url('../font/TTSsanaiR.ttf') format('truetype'), url('../font/TTSsanaiR.svg') format('svg'),url('../font/TTSsanaiR.woff') format('woff');/*路径要正确*/
+}
+a{
+	color: #ffffff;
+}
+.swiper-button-next,.swiper-button-prev{
+	display: none;
+}
+.footer .car_img{
+	width: 6.49rem;
+	height: auto;
+}

@@ -1,0 +1,12 @@
+.page_num .page_arrow{
+    display: inline-block;
+    width: 123px;
+    height: 43px;
+    line-height: 43px;
+    border: 2px solid #d98500;
+    background: #fff;
+    padding: 0;
+    margin: 1px 10px;
+    font-size: 27px;
+    color: #d98500;
+}

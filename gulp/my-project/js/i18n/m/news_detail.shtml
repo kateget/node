@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--#if expr="$QUERY_STRING = /path=(.+)/" -->
+        <!--#set var="path" value="$1" -->
+        <!--#endif -->
+        <title>Official PUBG on mobile</title>
+        <!--#include file="${path}?flag=head" -->
+        <!--#include virtual="inc/header.html"-->
+    </head>
+    <body>
+        <!--#include virtual="inc/nav.html"-->
+        <div class="wrap">
+            <header class="news_hd">
+                <h2 class="tit_news sprm" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'm_header_news'});">NEWS</h2>
+            </header>
+            <div class="par_news news_detail">
+                <!--#include file="${path}?flag=body" -->
+                <a href="/{# LANG #}/m/" class="btn_back" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'm_header_back'});">BACK</a>
+            </div>
+        </div>	
+        <!--#include virtual="inc/foot.html"-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript" src="/{# LANG #}/m/js/common.js" ></script>
+        <script type="text/javascript" src="/{# LANG #}/m/js/utils.js" ></script>
+        <script type="text/javascript" src="/{# LANG #}/m/js/news_detail.js" ></script>
+    </body>
+</html>
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Official PUBG on mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="Keywords" content="PUBG Mobile,PlayerUnknown's Battlegrounds Mobile,pubg mobile official,pubg mobile website,pubg mobile official website,pubg mobile multiplayer,pubg mobile game,pubg mobile download,pubg mobile update,pubg mobile ios,pubg mobile android"
+    />
+    <meta property="og:url" content="https://www.pubgmobile.com">
+    <meta property="og:site_name" content="Official PUBG on mobile">
+    <meta property="og:title" content="Official PUBG on mobile">
+    <meta property="og:description" content="PUBG Mobile is the FREE battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing.">
+    <meta property="og:url" content="http://www.pubgmobile.com">
+    <link rel="stylesheet" href="/common/css/all.css" />
+    <!--#set var="lang" value="{# LANG #}" -->
+    <!--#include virtual="inc/header.html"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" />
+</head>
+
+<body class="mobile">
+    <!--#include virtual="inc/nav.html"-->
+    <div class="wrap {# LANG #}">
+        <header>
+            <a href="javascript:pop_vid('//www.youtube.com/embed/NBTvT5q1U7g?rel=0&autoplay=1');" class="btn_video sprm" onclick="gtag('event', 'x_play_video', {'event_category': 'website','event_label': 'm_header_video'});"></a>
+            <h2 class="hd_slogn">PLAYERUNKNOWNS BATTLEGROUNDS MOBILE</h2>
+            <p class="head_btn c down-group">
+                <% 
+                    var lang = '{# LANG #}';
+                    if(lang == 'en-US') {
+                    %>
+                    <a href="https://app.adjust.com/4yxckw " class="btn_app sprm" target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'm_header_app'});">
+                Download on the App Store
+            </a>
+                    <a href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" class="btn_apk sprm apk-btn" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+                APK Download
+                <span class="down_tip">
+                        <span class="title">{# APK size: 159 MB #}</span>
+                        <span class="title">{# Download time: <em>[1 minute]</em> #}</span>
+                    </span>
+            </a>
+                    <% } else { %>
+                        <a href="https://app.adjust.com/ndvddx1" class="btn_app sprm" target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'm_header_app'});">
+                    Download on the App Store
+                </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.rekoo.pubgm" class="btn_google sprm" target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'm_header_google'});">
+                    Get it on Google Play
+                </a>
+                        <a href="https://sim.gpubgm.com/89kignb_Android_IG0160_No25_0.16.0.11460_Shipping_Google_TW.shell.signed_eFI.apk" class="btn_apk sprm apk-btn" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+                    APK Download
+                    
+                </a>
+                        <% } %>
+            </p>
+        </header>
+        <div class="game_show">
+            <div class="game_slide">
+                <div class="swiper-container swiper-shop">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="images/slide_img1.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/slide_img2.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/slide_img3.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/slide_img4.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/slide_img5.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img1.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img2.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img3.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img4.jpg" alt="" />
+                        </li>
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img5.jpg" alt="" />
+                        </li>
+                        <!-- <li class="swiper-slide tw">
+					<img src="images/slide_tw_img6.jpg" alt="" />
+				</li> -->
+                        <li class="swiper-slide tw">
+                            <img src="images/slide_tw_img7.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'm_header_prev'});"></div>
+                <div class="swiper-button-next" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'm_header_next'});"></div>
+            </div>
+        </div>
+        <div class="par_news">
+            <ul class="news_tab c">
+                <li class="on">
+                    <a href="javascript:;">ALL</a>
+                </li>
+                <li>
+                    <a href="javascript:;">PATCH NOTES</a>
+                </li>
+                <li>
+                    <a href="javascript:;">BAN NOTICE</a>
+                </li>
+            </ul>
+            <div class="news_main">
+                <div class="news_type" style="display: block;">
+                    <div class="swiper-container" id="swiper_news1">
+                        <ul class="swiper-wrapper">
+                            <!-- <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li>
+	            <li class="swiper-slide">
+	            	<a href="news.shtml" class="news_link">
+									<p class="news_notice">
+										<img src="images/news_notice.jpg" alt="news_notice" />
+									</p>
+									<div class="news_case">
+										<strong>ANNOUNCEMENTS</strong>
+										<h3 class="notice_tit">Spring Crate Is Here!</h3>
+										<p class="notice_text">Two new crates will be released on Feb 22 to celebrate the beginningof the new season!It's almost time</p>						
+									</div>
+								</a>
+	            </li> -->
+                            <!--#include virtual="<%= i18n.pick(ams.m.news.allnews) %>"-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_type">
+                    <div class="swiper-container" id="swiper_news2">
+                        <ul class="swiper-wrapper">
+                            <!--#include virtual="<%= i18n.pick(ams.m.news.patch_notes) %>"-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_type">
+                    <div class="swiper-container" id="swiper_news3">
+                        <ul class="swiper-wrapper">
+                            <!--#include virtual="<%= i18n.pick(ams.m.news.announcements) %>"-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="link_com c">
+
+                <% 
+                var lang = '{# LANG #}';
+                if(lang == 'en-US') {
+                %>
+                    <a href="https://www.youtube.com/pubgmobile" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_youtube'});"><i class="icon_you sprm"></i>Youtube</a>
+                    <a href="https://twitter.com/PUBGMOBILE" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_twitter'});"><i class="icon_twi sprm"></i>Twitter</a>
+                    <a href="https://facebook.com/PUBGMOBILE" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_facebook'});"><i class="icon_face sprm"></i>Facebook</a>
+                    <% } else { %>
+                        <a class="tw" href="https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_facebook'});"><i class="icon_face sprm Facebook"></i>Facebook</a>
+                        <a class="tw" href="https://www.instagram.com/pubg_mobile_tw" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_instagram'});"><i class="icon_face sprm instagram"></i>instagram</a>
+                        <a class="tw" href="https://www.youtube.com/channel/UCkBoytA_J2Mx6UQkkITCV_w" onclick="gtag('event', 'x_share', {'event_category': 'website','event_label': 'm_link_youtube'});"><i class="icon_face sprm youtube"></i>youtube</a>
+                        <% } %>
+
+            </p>
+        </div>
+    </div>
+    <!--#include virtual="inc/foot.html"-->
+    <div class="b_bg" style="display: none;">
+        <div class="pop_vid">
+            <a href="javascript:hidepop('.pop_vid');" class="pop_close" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'm_link_close'});">&times;</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="/{# LANG #}/m/js/common.js"></script>
+    <script>
+        //slide
+        var swiper1 = new Swiper('.swiper-shop', {
+            loop: true,
+            effect: 'coverflow',
+            paginationClickable: true,
+            grabCursor: false,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            coverflow: {
+                rotate: 20,
+                stretch: 100,
+                depth: 160,
+                modifier: 2,
+                slideShadows: true
+            }
+        });
+
+        //news_tab
+        $(function() {
+                $('.news_tab li').each(function(i) {
+                    $(this).on('mouseover', function() {
+                        $(this).addClass('on').siblings().removeClass('on');
+                        $('.news_type').eq(i).show().siblings().hide();
+                    })
+                })
+            })
+            //news_slide
+        var petS, petIndex;
+
+        function petSwiper(id) {
+            petS = new Swiper(id, {
+                slidesPerView: 1,
+                slidesPerColumn: 3,
+                slidesPerColumnFill: 'column',
+                spaceBetween: 10,
+                observer: true,
+                observeParents: true
+            });
+        }
+        petSwiper('#swiper_news1');
+        petSwiper('#swiper_news2');
+        petSwiper('#swiper_news3');
+        //pop_video
+        function pop(e) {
+            $(e).show();
+            $(".b_bg").show();
+        }
+
+        function hidepop(e) {
+            $(e).hide();
+            $(".b_bg").hide();
+            $(".video_frame").remove();
+        }
+
+        function pop_vid(v) {
+            if (v.length < 10) {
+                alert("Coming soon!");
+                return;
+            }
+            pop(".pop_vid");
+            $('<iframe class="video_frame" src="' + v + '" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>').appendTo(".pop_vid");
+        }
+    </script>

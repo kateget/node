@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<head>
+	<!--#include virtual="/{# LANG #}/m/inc/header.html"-->
+	<title>Official PUBG on mobile</title>
+	<meta name="applicable-device"content="pc,mobile">
+	<meta property="og:site_name" content="Battlegrounds Mobile">
+	<meta property="og:title" content="Battlegrounds Mobile">
+	<meta property="og:description" content="Battlegrounds Mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no, email=no">
+	<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../community/css/common.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css" integrity="sha256-n+cuzCLv1+Zr/zvgnVEOSoy0srQUF+xmhtLytMX5cdk=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+<div class="wrap">
+	<div class="header cls">
+		<a class="link_logo" href="javascript:;"><img class="logo" src="images/mainLogo.png" /></a>
+		<div class="header-swiper-container">
+			<div class="swiper-wrapper" >
+	            <div class="swiper-slide">
+	            	<img src="../images/PUBG_MOBILE_KV_B_1920px.jpg" class="swiper-icon">
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+        	<div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+		</div>
+		<ul class="pagination">
+		</ul>
+		<div class="available">
+			<a href="https://itunes.apple.com/us/app/pubg-mobile/id1330123889?mt=8" class="app"><img src="images/btn_appstore.png" /></a>
+			<a href="https://play.google.com/store/apps/details?id=com.tencent.ig" class="google"><img src="images/btn_playsotre.png" /></a>
+		</div>
+	</div>
+	<div class="banner">
+		<img class="banner_title" src="images/title_livestreaming.png"></img>
+		<!-- <img src="images/live streaming_alpha.png" class="bannerBg"> -->
+		<div id="live_youtube" class="bannerBg"></div>
+	</div>
+	<div class="video_glips">
+		<img class="video_title" src="images/title_videoclips.png" />
+		<div class="swiper-container-video">
+	        <div class="swiper-wrapper" >
+	        </div>
+	        <!-- Add Pagination -->
+        	<div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+		</div>
+		<ul class="pagination"></ul>
+	    <a href="https://gaming.youtube.com/c/PUBGMOBILE/" class="youtubeChannel" target="_blank">
+	    	<img src="images/btn_youtube.png">
+	    </a>
+		<a href="https://www.facebook.com/PUBGMOBILE/" class="facebookFanPage" target="_blank">
+			<img src="images/btn_facebook.png">
+		</a>
+	</div>
+</div>
+<ul class="player_select cls">
+	<li class="select_Item"></li>
+	<li class="select_Item"></li>
+</ul>
+<div class="player_content indonesia">
+	<div class="start_players">
+		<img class="start_title" src="images/title_starplayer.png"></img>
+		<div class="swiper-container1">
+	        <div class="swiper-wrapper" >
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Randika"></div>
+	            	<span>Randika</span>
+	            	<span>"Super MOBA Gamer"</span>
+	            	<a href="https://www.cubetv.sg/18066010" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Jeje"></div>
+	            	<span>Jeje</span>
+	            	<span>"I'm No.1"</span>
+	            	<a href="http://www.cubetv.sg/17017465" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Rahmad"></div>
+	            	<span>Rahmad</span>
+	            	<span>"Indonesia's popular streamer!"</span>
+	            	<a href="http://www.cubetv.sg/15013072" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon syarief"></div>
+	            	<span>syarief</span>
+	            	<span>"Interesting streamer"</span>
+	            	<a href="http://www.cubetv.sg/14770283" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Anggi"></div>
+	            	<span>Anggi Julianata</span>
+	            	<span>"Technical gamer from Cube TV"</span>
+	            	<a href="http://www.cubetv.sg/12240176" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Andy"></div>
+	            	<span>Andy setyawan</span>
+	            	<span>"Super MOBA gamer, humorous streamer on Cube TV"</span>
+	            	<a href="http://www.cubetv.sg/13400035" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Ahmad"></div>
+	            	<span>Ahmad Naufal</span>
+	            	<span>"Beat me if you can"</span>
+	            	<a href="http://www.cubetv.sg/14770252" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Odyseus"></div>
+	            	<span>Odyseus</span>
+	            	<span>"All-round gamer, skilled in mobile games and PC games"</span>
+	            	<a href="http://www.cubetv.sg/14770265" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Felliz"></div>
+	            	<span>Felliz Santang</span>
+	            	<span>"Watch my excellent performance NOW!"</span>
+	            	<a href="http://www.cubetv.sg/14770188" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon FearUs"></div>
+	            	<span>FearUs</span>
+	            	<span>"MSC commentator, popular streamer on Cube TV"</span>
+	            	<a href="http://www.cubetv.sg/14770284" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Qyuu_Cosplayer"></div>
+	            	<span>Qyuu_Cosplayer</span>
+	            	<span>"Super gamer from Cube TV"</span>
+	            	<a href="http://www.cubetv.sg/14780001" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon SuperNayr"></div>
+	            	<span>SuperNayr</span>
+	            	<span>"The most famous Indonesian PUBG player"</span>
+	            	<a href="https://www.nimo.tv/live/381827" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Ndrev1ce"></div>
+	            	<span>Ndrev1ce</span>
+	            	<span>"Member of best Indonesian PUBG team-Aerowolf ADS"</span>
+	            	<a href="https://www.nimo.tv/live/77169769" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon NcSlasher"></div>
+	            	<span>NcSlasher</span>
+	            	<span>"Member of best Indonesian PUBG team-Aerowolf ADS"</span>
+	            	<a href="https://www.nimo.tv/live/617723493" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon awkarinnn"></div>
+	            	<span>awkarinnn</span>
+	            	<span>"Member of best Indonesian PUBG team-Aerowolf ADS"</span>
+	            	<a href="https://www.nimo.tv/live/925203" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Sarah"></div>
+	            	<span>Sarah Viloid</span>
+	            	<span>" A Famous Cosplayer & super cute player!"</span>
+	            	<a href="https://www.nimo.tv/live/4265926" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon ZimzAjaib"></div>
+	            	<span>ZimzAjaib</span>
+	            	<span>"Famous Indonesian Youtuber"</span>
+	            	<a href="https://www.nimo.tv/live/556990914" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Kelvin"></div>
+	            	<span>Kelvin</span>
+	            	<span>"I like Chicken Dinner"</span>
+	            	<a href="https://www.nimo.tv/live/677994739" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Angela"></div>
+	            	<span>Angela Tan</span>
+	            	<span>"Famous Host in Indonesia"</span>
+	            	<a href="https://www.nimo.tv/live/3909588" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<div class="swiper-icon Tepe46"></div>
+	            	<span>Tepe46</span>
+	            	<span>"Famous Indonesian PUBG Youtuber"</span>
+	            	<a href="https://www.nimo.tv/live/278651976" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	        </div>
+	       <!-- Add Pagination -->
+        	<div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+		</div>
+		<ul class="pagination"></ul>
+	</div>
+	<div class="ranking">
+		<img class="ranking_title" src="images/title_ranking.png"></img>
+		<ul class="rank_list">
+			<li class="rank_list0 hover"></li>
+			<li class="rank_list1"></li>
+			<li class="rank_list2"></li>
+			<li class="rank_list3"></li>
+		</ul>
+		<ul class="rank_content">												
+			<!-- <li class="rank_item">
+				<p class="coming">coming soon</p>
+			</li>	 -->
+		</ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_more">
+			<li class="hover"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>	
+</div>
+<div class="player_content thailand">
+	<div class="start_players">
+		<img class="start_title" src="images/title_starplayer.png"></img>
+		<div class="swiper-container2">
+	        <div class="swiper-wrapper" >
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Jannine_Weigel"></div>
+	            	<span>Jannine Weigel</span>
+	            	<span>"Thai Singer and Youtuber , she loves to play game"</span>
+	            	<a href="http://www.cubetv.sg/17655733" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Hellgate"></div>
+	            	<span>Hellgate</span>
+	            	<span>"A funny YouTuber & Player"</span>
+	            	<a href="http://www.cubetv.sg/17062907" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon FeelingRock"></div>
+	            	<span>FeelingRock</span>
+	            	<span>"Thailand's top player in PUBG MOBILE"</span>
+	            	<a href="http://www.cubetv.sg/16803846" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Sir_Mikey"></div>
+	            	<span>Sir Mikey</span>
+	            	<span>"Famous youtuber, well-known for his channel Guardian TV "</span>
+	            	<a href="http://www.cubetv.sg/18081529" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Cop"></div>
+	            	<span>Cop</span>
+	            	<span>"A HOT female player!"</span>
+	            	<a href="http://www.cubetv.sg/14770264" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon rubyz"></div>
+	            	<span>หนูหน๋ม</span>
+	            	<span>"She is so Cute~~"</span>
+	            	<a href="http://www.cubetv.sg/17181735" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon fern"></div>
+	            	<span>fern</span>
+	            	<span>"Top VJ in Bigo Live"</span>
+	            	<a href="http://www.cubetv.sg/14770136" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon MIWA"></div>
+	            	<span>MIWA</span>
+	            	<span>"TOP VJ in Bigo Live with PUBG MOBILE"</span>
+	            	<a href="http://www.cubetv.sg/14770258" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon nongnom"></div>
+	            	<span>nongnom</span>
+	            	<span>"A sexy gamer of PUBG MOBILE"</span>
+	            	<a href="http://www.cubetv.sg/17158787" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Dew"></div>
+	            	<span>Dew</span>
+	            	<span>"I like PUBG MOBILE"</span>
+	            	<a href="http://www.cubetv.sg/14770267" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon BOY_Pakorn"></div>
+	            	<span>BOY Pakorn</span>
+	            	<span>"Famous Actor in Thailand"</span>
+	            	<a href="http://www.cubetv.sg/17156266" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Nhong_Thana"></div>
+	            	<span>Nhong Thana</span>
+	            	<span>"Famous Actor in Thailand"</span>
+	            	<a href="https://www.facebook.com/nonghtanafanclub/?ref=br_rs" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Chippie_Sirin"></div>
+	            	<span>Chippie Sirin</span>
+	            	<span>"Famous Actress in Thailand"</span>
+	            	<a href="https://www.facebook.com/chippysirinofficial/?ref=br_rs" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Antone_Pinto"></div>
+	            	<span>Antone Pinto</span>
+	            	<span>"Thailand Boxer and Model. "</span>
+	            	<a href="https://www.twitch.tv/pint0gaming" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Cutto_Lipta"></div>
+	            	<span>Cutto Lipta</span>
+	            	<span>"Thai singer of Lipta 'band'."</span>
+	            	<a href="https://www.facebook.com/cuttOcuttO/" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Focus_Jirakul"></div>
+	            	<span>Focus Jirakul</span>
+	            	<span>"Famous Actress in Thailand"</span>
+	            	<a href="https://www.facebook.com/Focusjeerakul/?ref=br_rs" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Lowcost_Cosplay"></div>
+	            	<span>Lowcost Cosplay</span>
+	            	<span>"Famous Page Creator -  Lowcost Cosplay!"</span>
+	            	<a href="https://www.facebook.com/Lowcostcosplay/" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Yokohama"></div>
+	            	<span>Rain Yokohama</span>
+	            	<span>"Beat me? Not easy."</span>
+	            	<a href="https://www.facebook.com/Rainyokohama55/" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon Sudlokomteen"></div>
+	            	<span>Sudlokomteen</span>
+	            	<span>"A funny player"</span>
+	            	<a href="https://www.facebook.com/sudlokomteen/" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	             <div class="swiper-slide">
+	            	<div class="swiper-icon RETPUCHPLS"></div>
+	            	<span>RETPUCHPLS</span>
+	            	<span>"Funny retouch photo creator"</span>
+	            	<a href="https://www.facebook.com/retouchpls/" target= _blank><div class="play_icon" ></div></a>
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+        	<div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+		</div>
+		<ul class="pagination"></ul>
+	</div>
+	<div class="ranking">
+		<img class="ranking_title" src="images/title_ranking.png"></img>
+		<ul class="rank_list">
+			<li class="rank_list0 hover"></li>
+			<li class="rank_list1"></li>
+			<li class="rank_list2"></li>
+			<li class="rank_list3"></li>
+		</ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_content"></ul>
+		<ul class="rank_more">
+			<li class="hover"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>	
+</div>
+<div class="dialog_container">
+	<div id="video_dialog"></div>
+	<div class="dialog_X">X</div>
+</div>
+<div class="dialog_mask"></div>
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js" integrity="sha256-76xv7CukN7apBuJJ+tnePH08EFpIE2sBVTdrWYnE12o=" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+</body>
+<!--#include virtual="/{# LANG #}/m/inc/foot.html"-->

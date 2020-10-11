@@ -1,0 +1,1 @@
+$(function(){$("#question-list").on("click",".question h4",function(i){$(this).siblings("p").slideToggle(),$(this).toggleClass("active")}),$("#question-list > .question:first-child > h4").click(),$(".wrap > .flot-navigator > div.top").click(function(i){$(window).scrollTop(0)}),$(".nav_list li").eq(3).addClass("on").siblings().removeClass("on")});

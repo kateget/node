@@ -1,0 +1,650 @@
+html{
+	font-size: 6.45vw !important;
+}
+body{
+	background:url(../images/mainBg.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.14rem;
+	font-family: TTSsanaiR;
+	color: #ffffff;
+	max-width:100%;
+}
+body>.wrap{
+	background-color: transparent; 
+    min-width: 0 !important;
+}
+/* header start */
+.header{
+   background: url(../images/main_banner_line.png) no-repeat;
+    background-size: 12.18rem auto;
+    background-position: -0.07rem 5.85rem;
+    /* padding: 0 7px; */
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    overflow: inherit;
+}
+.header .link_logo{
+	display: inline-block;
+    margin-top: 2.62rem;
+}
+.header .available{
+    margin-top: 0.05rem;
+}
+.header .logo,.header .available .google,.header .available .app{
+    cursor: pointer;
+    display: inline-block;
+}
+.header .available .app{
+	margin-right: 0.1rem;
+}
+.available .google img,.available .app img{
+    width: 2.8rem;
+}
+.available a{
+	display: inline-block;
+}
+.header .logo,.header span,.available{
+    text-align: center;
+}
+.header .logo{
+    width: 7.9rem;
+}
+label.prev,label.next{
+	position: absolute;
+	display: block;
+	width: 0.27rem;
+	height: 0.4rem;   
+	top: 9.2rem;
+	cursor: pointer;
+}
+label.prev{
+	left: -0.3rem;
+	background: url(../images/btn_prev_normal.png) no-repeat;
+	background-size: 100%;
+}
+label.next{
+	right: -0.3rem;
+	background: url(../images/btn_next_normal.png) no-repeat;
+	background-size: 100%;
+}
+/* banner start */
+.banner{
+    margin-top: 2.43rem;
+    background: url(../images/img_mainStream.png) no-repeat;
+    padding: 0 0.10rem 0.1rem;
+    background-size: 12.0rem;
+    background-position: -0.0rem 1.26rem;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 8.2rem;
+}
+.banner .banner_title{
+	width:8.75rem;
+}
+.banner .bannerBg{
+    width: 11.81rem;
+    margin-top: 0.28rem;
+    height: 6.64rem;
+    transform: translateY(0);
+}
+.banner .bannerBg .swiper-icon{
+	width: 100%;
+}
+.banner .prev,.banner .next{
+	top: 4.2rem;
+}
+/* banner end */
+
+/* start_players video_glips start */
+.start_players{
+	text-align: center;
+    background: rgba(0,0,0,.1);
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    position: relative;
+}
+.start_players .next,.start_players .prev{
+	top: 2rem;
+}
+.video_glips{
+    margin-top: 0.84rem;
+    font-size: 0.2rem;
+    position: relative;
+}
+.video_glips .prev,.video_glips .next{
+	top: 3.2rem;
+}
+.video_glips .video_title{
+    width: 8.7rem;
+}
+.video_glips .swiper-slide{
+	background: url(../images/img_videoBox.png) no-repeat;
+    padding: 0.1rem 0.1rem 0.05rem 0.1rem;
+    box-sizing: border-box;
+    background-size: 2.89rem auto;
+    margin-top: 0 !important;
+}
+.video_glips .swiper-slide p{
+	margin-top: 0.15rem;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.video_glips .youtubeChannel,.video_glips .facebookFanPage{
+	display: inline-block;
+	margin-top: 0.4rem;
+}
+.video_glips .youtubeChannel{
+	margin-right: 0.22rem;
+}
+.video_glips .youtubeChannel img,.video_glips .facebookFanPage img{
+	width: 3.59rem;
+}
+/*.video_glips .youtubeChannel img:hover,.video_glips .facebookFanPage img:hover{
+	transform: scale(1.1);
+}*/
+.header-swiper-container,.swiper-container-video,.start_players .swiper-container1,.start_players .swiper-container2,.live-swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    width: 11.80rem;
+    box-sizing: border-box;
+    transform: translateY(-0.37rem);
+}
+.live-swiper-container,.live-swiper-container ~ label{
+	display: none;
+}
+.swiper-container-video{
+	margin-top: 0.09rem;
+	transform: translateY(0);
+}
+.swiper-container-video{
+	display: block;
+	padding: 0;
+	border: none;
+}
+.header-swiper-container .swiper-icon{
+	width: 100%;
+}
+.start_players .swiper-container1,.video_glips .swiper-container-video,.start_players .swiper-container2{
+    text-align: center;
+    width: 12rem;
+    transform: translateY(0);
+}
+.start_players .swiper-slide{
+	background: url(../images/profile_thailand.png) no-repeat;
+    background-size: 2.48rem;
+    background-position: 0.23rem 0;
+}
+.indonesia .swiper-slide{
+	background-image: url(../images/profile_indonesia.png);
+}
+.start_players .swiper-slide img{
+    width: 1.9rem;
+    margin: 0.28rem auto 0.3rem;
+    border-radius: 50%;
+}
+/*.start_players .swiper-slide img,.video_glips .swiper-slide img{
+	width:200px;
+	height: 200px;
+	margin:0 auto;
+}*/
+.video_glips .swiper-slide .swiper-icon{
+	width: 2.65rem;
+    height: 1.95rem;
+}
+.start_players .swiper-slide img,.start_players .swiper-slide span,.video_glips .swiper-slide img,.video_glips .swiper-slide span{
+	display: block;
+}
+.start_players .swiper-slide span:nth-of-type(1){
+	color: #C19C0D;
+	font-size: 0.22rem;
+	margin-bottom: 0.1rem;
+}
+.start_players .swiper-slide span:nth-of-type(2) {
+    height: 0.5rem;
+}
+.start_players .swiper-slide div.play_icon{
+	display: inline-block;
+	margin-top: 0.2rem;
+	width: 0.41rem;
+	height: 0.41rem;
+}
+.start_players .swiper-icon{
+    width: 1.96rem;
+    height: 1.96rem;
+    margin: 0.26rem auto 0.28rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+    background-size: cover;
+}
+/* indonesia player */
+.start_players  .swiper-icon.Randika{
+	background-image: url(../images/player_randika.png);
+}
+.start_players  .swiper-icon.Jeje{
+    background-image: url(../images/player_jeje.png);
+}
+.start_players  .swiper-icon.Rahmad{
+    background-image: url(../images/player_rahmad.png);
+}
+.start_players  .swiper-icon.syarief{
+    background-image: url(../images/player_syarief.png);
+    background-size: 190%;
+}
+.start_players  .swiper-icon.Anggi{
+    background-image: url(../images/player_anggi_julianata.png);
+}
+.start_players  .swiper-icon.Andy{
+    background-image: url(../images/player_andy_setyawan.png);
+}
+.start_players  .swiper-icon.Ahmad{
+    background-image: url(../images/player_ahmad_naufal.png);
+    background-size: 120%;
+}
+.start_players  .swiper-icon.Odyseus{
+    background-image: url(../images/player_odyseus.png);
+}
+.start_players  .swiper-icon.Felliz{
+    background-image: url(../images/player_felliz_santang.png);
+}
+.start_players  .swiper-icon.FearUs{
+    background-image: url(../images/player_fearus.png);
+}
+.start_players  .swiper-icon.Qyuu_Cosplayer{
+    background-image: url(../images/player_qyuu_cosplayer.png);
+    background-size: 100%;
+}
+.start_players  .swiper-icon.SuperNayr{
+    background-image: url(../images/player_supernayr.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.Ndrev1ce{
+    background-image: url(../images/player_ndrev1ce.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.NcSlasher{
+    background-image: url(../images/player_ncslasher.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.awkarinnn{
+    background-image: url(../images/player_awkarinnn.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.Sarah{
+    background-image: url(../images/player_sarah_viloid.png);
+}
+.start_players  .swiper-icon.ZimzAjaib{
+    background-image: url(../images/player_zimzajaib.png);
+}
+.start_players  .swiper-icon.Kelvin{
+    background-image: url(../images/player_kelvin.png);
+}
+.start_players  .swiper-icon.Angela{
+    background-image: url(../images/player_angela_tan.png);
+}
+.start_players  .swiper-icon.ZimzAjaib{
+    background-image: url(../images/player_zimzajaib.png);
+}
+.start_players  .swiper-icon.Tepe46{
+    background-image: url(../images/player_tepe46.png);
+}
+/* thailand player */
+.thailand .swiper-icon.Jannine_Weigel{
+    background-image: url(../images/player_jannine_weigel.png);
+}
+.thailand .swiper-icon.Hellgate{
+    background-image: url(../images/player_hellgate.png);
+}
+.thailand .swiper-icon.FeelingRock{
+    background-image: url(../images/player_feelingRock.png);
+}
+.thailand .swiper-icon.Sir_Mikey{
+    background-image: url(../images/player_sir_mikey.png);
+}
+.thailand .swiper-icon.Cop{
+    background-image: url(../images/player_cop.png);
+}
+.thailand .swiper-icon.rubyz{
+    background-image: url(../images/player_rubyz.png);
+}
+.thailand .swiper-icon.fern{
+    background-image: url(../images/player_fern.png);
+}
+.thailand .swiper-icon.MIWA{
+    background-image: url(../images/player_miwa.png);
+}
+.thailand .swiper-icon.nongnom{
+    background-image: url(../images/player_nongnom.png);
+}
+.thailand .swiper-icon.Dew{
+    background-image: url(../images/player_dew.png);
+}
+.thailand .swiper-icon.BOY_Pakorn{
+    background-image: url(../images/player_boy_pakom.png);
+}
+.thailand .swiper-icon.Nhong_Thana{
+    background-image: url(../images/player_nhong_thana.png);
+}
+.thailand .swiper-icon.Chippie_Sirin{
+    background-image: url(../images/player_chippie_sirin.png);
+}
+.thailand .swiper-icon.Antone_Pinto{
+    background-image: url(../images/player_antone_pinto.png);
+}
+.thailand .swiper-icon.Cutto_Lipta{
+    background-image: url(../images/player_cutto_lipta.png);
+}
+.thailand .swiper-icon.Focus_Jirakul{
+    background-image: url(../images/player_focus_jirakul.png);
+}
+.thailand .swiper-icon.Lowcost_Cosplay{
+    background-image: url(../images/player_lowcost_cosplay.png);
+}
+.thailand .swiper-icon.Yokohama{
+    background-image: url(../images/player_rain_yokohama.png);
+}
+.thailand .swiper-icon.Sudlokomteen{
+    background-image: url(../images/player_sudlokomteen.png);
+}
+.thailand .swiper-icon.RETPUCHPLS{
+    background-image: url(../images/player_retuchpls.png);
+}
+/* start_players video_glips end */
+
+/* player_select start */
+.player_select .select_Item{
+	/*display: inline-block;*/
+	float: left;
+    width: 6.55rem;
+	height: 1.16rem;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/* player_select end */
+
+/* player_content start */
+.player_content,.player_select{
+	width: 13.14rem;
+	margin: 0 auto;
+}
+.player_content{
+    padding: 0.35rem 0.5rem;
+    border: 1px solid #EFA410;
+    box-sizing: border-box;
+    margin-top: -0.03rem;
+    margin: -0.03rem auto 1.4rem;
+    padding-bottom: 0.28rem;
+}
+.player_content:nth-of-type(odd){
+	display: none;
+}
+.player_content .start_title{
+	width: 5.14rem;
+	margin-bottom: 0.3rem;
+}
+.player_content .rank_content{
+	display: none;
+}
+.player_content:nth-of-type(even) ul.rank_content:nth-child(3){
+	display: block;
+}
+.indonesia .play_icon{
+	background: url(../images/btn_play_indonesia_normal.png) no-repeat;
+	background-size: 100%;
+}
+.indonesia .play_icon.hover{
+	background-image: url(../images/btn_play_indonesia_push.png);
+}
+.thailand .play_icon{
+	background: url(../images/btn_play_thailand_normal.png) no-repeat;
+	background-size: 100%;
+}
+.thailand .play_icon.hover{
+	background-image: url(../images/btn_play_thailand_push.png);
+}
+.player_select{
+   margin-top: 2.04rem;
+    font-size: 0.4rem;
+    background: url(../images/nationalBox_tab_indonesia.png) no-repeat;
+    background-position: -0.09rem -0.22rem;
+    background-size: 13.33rem auto;
+}
+.player_select_hover{
+	background-image: url(../images/nationalBox_tab_thailand.png);
+}
+/* player_content end */
+
+/*rank start*/
+.ranking{
+	text-align: center;
+	margin-top: 0.55rem;
+}
+.ranking .ranking_title{
+	width: 3.5rem;
+    margin-bottom: 0.23rem;
+}
+.rank_list{
+	background: url(../images/middel_tab.png) no-repeat;
+	height: 0.95rem;
+	background-size: 100% auto;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 0.53rem;
+}
+.rank_list li{
+	width: 2.0rem;
+	height: 0.45rem;
+	display: inline-block;
+	background-size: 1.56rem auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.rank_list li.rank_list0{
+	width: 2.2rem;
+	background-image: url(../images/btn_total_normal.png);
+}
+.rank_list li.rank_list1{
+	background-image: url(../images/btn_round1_normal.png);
+}
+.rank_list li.rank_list2{
+	background-image: url(../images/btn_round2_normal.png);
+}
+.rank_list li.rank_list3{
+	background-image: url(../images/btn_round3_normal.png);
+}
+
+.rank_list li.rank_list0.hover{
+	background-image: url(../images/btn_total_push.png);
+}
+.rank_list li.rank_list1.hover{
+	background-image: url(../images/btn_round1_push.png);
+}
+.rank_list li.rank_list2.hover{
+	background-image: url(../images/btn_round2_push.png);
+}
+.rank_list li.rank_list3.hover{
+	background-image: url(../images/btn_round3_push.png);
+}
+.rank_content .rank_item{
+    height: 1.12rem;
+    background: url(../images/img_box.png) no-repeat;
+    background-size: 12.36rem auto;
+    text-align: left;
+    background-position: -0.2rem -0.17rem;
+    margin-bottom: 0.05rem;
+}
+.rank_content .rank_item:after{
+	display: inline-block;
+	content: "";
+	width: 0;
+	height: 1.12rem;
+	vertical-align: middle;
+}
+.rank_content .rank_item .rank_fraction{
+	display: inline-block;
+	color: #EDA10F;
+	font-size: 0.3rem;
+	vertical-align: middle;
+	text-align: center;
+}
+.rank_content .rank_item .rank_fraction:nth-of-type(2){
+	margin-right: 1.4rem;
+}
+.rank_content  .rank_fraction{
+	margin-right: 1.20rem;
+    width: 0.6rem;
+}
+.rank_content  .rank_fraction:nth-of-type(3){
+	margin-right: 0;
+}
+.border_content .rank_fraction{
+	width: 1.32rem;
+    box-sizing: border-box;
+    line-height: 0.8rem;
+    margin-right: 0;
+}
+.border_content{
+	display: inline-block;
+	box-sizing: border-box;
+	border-right: 2px solid #daae16;
+    margin-right: 0.38rem;
+    vertical-align: middle;
+}
+.rank_content .player_name{
+	display: inline-block;
+	width: 4.41rem;
+	padding: 0.21rem 0rem 0.21rem 0;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.rank_content .player_name li{
+	font-size: 0.20rem;
+	display: inline-block;
+	width: 1.94rem;
+    margin-right: 0.1rem;
+}
+.rank_content p.coming{
+	font-size: 0.24rem;
+	line-height: 1.12rem;
+	text-align: center;
+}
+.rank_content .player_name li:nth-of-type(1),.rank_content .player_name li:nth-of-type(2){
+	/*margin-bottom: 0.2rem;*/
+}
+.rank_more{
+    margin-top: 0.2rem;
+	display: inline-block; 
+}
+.rank_more li{
+	display: inline-block;
+	width: 0.26rem;
+	height: 0.26rem;
+	background: url(../images/pagenation_off.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+.rank_more li.hover{
+	background-image: url(../images/pagenation_on.png);
+}
+/* rank end */
+
+/* dialog start */
+
+.dialog_container{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 999;
+	text-align: center;
+}
+.dialog_container .dialog_X{
+    display: block;
+    position: absolute;
+    content: "X";
+    width: 0.3rem;
+    height: 0.3rem;
+    background: rgba(0,0,0,.9);
+    border-radius: 50%;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    right: -0.15rem;
+    top: -0.15rem;
+    cursor: pointer;
+}
+.dialog_mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.4);
+    display: none;
+}
+/* dialog end */
+
+@media screen and (max-width: 800px) {
+    .swiper-wrapper a p,.swiper-container1 span,.swiper-container-video a p,.rank_content span,.rank_content ul.player_name li,.rank_content .coming{
+        transform-origin: left;
+        transform: scale(0.5);
+        white-space: nowrap;
+        /* max-width: 0.45rem; */
+        display: inline-block;
+        text-align: center;
+    }
+    .swiper-container-video a p:nth-of-type(1){
+        transform: scale(0.5) translateX(0.425rem);
+    }
+    .swiper-container-video a p:nth-of-type(2){
+        transform: scale(0.5) translateX(0.6rem);
+    }
+    .start_players span:nth-of-type(1){
+        transform: scale(0.5) translateX(0.425rem);
+        height: 0.06rem;
+    }
+    .start_players span:nth-of-type(2){
+        transform: scale(0.5) translateX(0.0rem);
+    }
+    /*.rank_content li span:nth-of-type(1){
+       transform: scale(0.5) translateX(0.985rem);
+        padding-right: 0.685rem;
+    }*/
+    .border_content .rank_fraction{
+       transform: scale(0.5) translateX(0.985rem);
+        padding-right: 0.685rem;
+    }
+    .rank_content ul.player_name li{
+       transform: scale(0.5) translateX(0.425rem);
+    }
+    .rank_content ul.player_name li{
+        width: 1.8rem;
+   		height: 0.12rem;
+    }
+    .player_content{
+        margin-bottom: 0.1rem;
+    }
+    .swiper-container-video .swiper-slide{
+        margin-top: 0 !important;
+        padding-bottom: 0;
+    }
+    .rank_content .coming{
+        line-height: 0.65rem;
+        text-align: center;
+        transform: scale(0.5) translateX(0);
+        transform-origin: center;
+    }
+}

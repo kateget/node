@@ -1,0 +1,778 @@
+html{
+	font-size: 13vw !important;
+    -webkit-text-size-adjust: none;
+}
+body{
+	background:url(../images/mainBg.png) no-repeat;
+    background-size: 100% 100%;
+	font-size: 0.14rem;
+	font-family: TTSsanaiR;
+	color: #ffffff;
+}
+.wrap{
+	width: 6.9rem;
+	background-color: transparent; 
+    height: auto;
+    min-width: 0 !important;
+}
+.swiper-pagination{
+	display: none;
+}
+.footer .car_img{
+    width: 4.0rem;
+}
+/* header start */
+.header{
+    background: url(../images/main_banner_line.png) no-repeat;
+    background-size: 7rem auto;
+    background-position: -0.074rem 3.295rem;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+}
+.header .link_logo{
+	display: inline-block;
+   margin-top: 1.47rem;
+}
+.header .available{
+    margin-top: 0.01rem;
+}
+.header .logo,.header .available .google,.header .available .app{
+    cursor: pointer;
+    display: inline-block;
+}
+ .header .available .app{
+ 	margin-right: 0.1rem;
+ }
+.available .google img,.available .app img{
+    width: 2.09rem;
+}
+.available a{
+	display: inline-block;
+}
+.header .logo,.header span,.available{
+    text-align: center;
+}
+.header .logo{
+    width: 4.52rem;
+}
+.pagination{
+    margin: 0.1rem 0;
+}
+.pagination .page{
+    background: url(../images/pagenation_off.png) no-repeat;
+    width: 0.14rem;
+    height: 0.15rem;
+    margin: 0 0.02rem;
+    background-size: 100% auto;
+    display: inline-block;
+}
+.pagination .page.hover{
+	background-image: url(../images/pagenation_on.png);
+}
+/* banner start */
+.banner{
+    margin-top: 0.4rem;
+    background: url(../images/img_mainStream.png) no-repeat;
+    padding: 0 0.1rem 0.1rem;
+    background-size: 7.01rem;
+    background-position: -0.043rem 0.54rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.banner .banner_title{
+	width:5rem;
+    margin: 0 auto;
+}
+.banner .bannerBg{
+    width: 6.76rem;
+    height: 3.81rem;
+    transform: translateY(0);
+}
+.banner .swiper-icon{
+    width:100%;
+}
+/* banner end */
+
+/* start_players video_glips start */
+.start_players{
+	text-align: center;
+    background: rgba(0,0,0,.1);
+    box-sizing: border-box;
+    font-size: 0.12rem;
+    position: relative;
+}
+.start_players .next,.start_players .prev{
+	top: 2rem;
+}
+.video_glips{
+    margin-top: 0.52rem;
+    font-size: 0.14rem;
+    position: relative;
+}
+.video_glips .prev,.video_glips .next{
+	top: 3.2rem;
+}
+.video_glips .video_title{
+	width:3.81rem;
+    margin: 0 auto;
+}
+.video_glips .swiper-slide{
+    background: url(../images/img_videoBox.png) no-repeat;
+    padding: 0.09rem;
+    box-sizing: border-box;
+    background-size: 1.86rem auto;
+    background-position: 0.0rem -0.001rem;
+}
+.video_glips .swiper-slide p{
+	/*display: block;*/
+    margin-top: 0.10rem;
+}
+.video_glips .youtubeChannel,.video_glips .facebookFanPage{
+	display: inline-block;
+}
+.video_glips .youtubeChannel{
+	margin-right: 0.22rem;
+}
+.video_glips .youtubeChannel img,.video_glips .facebookFanPage img{
+	width: 2.60rem;
+}
+.header-swiper-container,.swiper-container-video,.start_players .swiper-container1,.start_players .swiper-container2,.live-swiper-container{
+   margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    width: 6.7rem;
+    box-sizing: border-box;
+    transform: translateY(-0.24rem);
+}
+.live-swiper-container,.live-swiper-container ~ label{
+    display: none;
+}
+.swiper-container-video{
+	margin-top: 0.09rem;
+	transform: translateY(0);
+}
+.swiper-container-video{
+	display: block;
+	padding: 0;
+	border: none;
+}
+.header-swiper-container .swiper-icon{
+	width: 100%;
+}
+.start_players .swiper-container1,.video_glips .swiper-container-video,.start_players .swiper-container2{
+    text-align: center;
+    width: 6.0rem;
+    transform: translateY(0);
+}
+.start_players .swiper-container1,.start_players .swiper-container2{
+    text-align: center;
+    width: 6.8rem;
+    transform: translateY(0);
+}
+.start_players .swiper-slide{
+	background: url(../images/profile_thailand.png) no-repeat;
+    background-size: 1.48rem;
+    background-position: center 0;
+}
+.indonesia .swiper-slide{
+	background-image: url(../images/profile_indonesia.png);
+}
+.start_players .swiper-slide img{
+	width: 1.48rem;
+    margin: 0 auto;
+}
+/*.start_players .swiper-slide img,.video_glips .swiper-slide img{
+	width:200px;
+	height: 200px;
+	margin:0 auto;
+}*/
+.video_glips .swiper-slide .swiper-icon{
+	width: 1.7rem;
+    height: 1.23rem;
+}
+.start_players .swiper-slide img,.start_players .swiper-slide span,.video_glips .swiper-slide img,.video_glips .swiper-slide span{
+	display: block;
+	white-space: nowrap;
+}
+.start_players .swiper-slide span{
+    white-space: inherit;
+}
+.start_players .swiper-slide span:nth-of-type(1){
+	color: #C19C0D;
+	font-size: 0.14rem;
+	margin-bottom: 0.05rem;
+}
+.start_players .swiper-slide span:nth-of-type(2){
+    height: 0.45rem;
+}
+.start_players .swiper-slide div.play_icon{
+	display: inline-block;
+	margin: 0.2rem 0 0.1rem 0;
+	width: 0.23rem;
+	height: 0.23rem;
+}
+
+.start_players .swiper-icon{
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: 0.19rem auto 0.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/* indonesia player */
+.start_players  .swiper-icon.Randika{
+    background-image: url(../../images/player_randika.png);
+}
+.start_players  .swiper-icon.Jeje{
+    background-image: url(../../images/player_jeje.png);
+}
+.start_players  .swiper-icon.Rahmad{
+    background-image: url(../../images/player_rahmad.png);
+}
+.start_players  .swiper-icon.syarief{
+    background-image: url(../../images/player_syarief.png);
+    background-size: 190%;
+}
+.start_players  .swiper-icon.Anggi{
+    background-image: url(../../images/player_anggi_julianata.png);
+}
+.start_players  .swiper-icon.Andy{
+    background-image: url(../../images/player_andy_setyawan.png);
+}
+.start_players  .swiper-icon.Ahmad{
+    background-image: url(../../images/player_ahmad_naufal.png);
+    background-size: 120%;
+}
+.start_players  .swiper-icon.Odyseus{
+    background-image: url(../../images/player_odyseus.png);
+}
+.start_players  .swiper-icon.Felliz{
+    background-image: url(../../images/player_felliz_santang.png);
+}
+.start_players  .swiper-icon.FearUs{
+    background-image: url(../../images/player_fearus.png);
+}
+.start_players  .swiper-icon.Qyuu_Cosplayer{
+    background-image: url(../../images/player_qyuu_cosplayer.png);
+    background-size: 100%;
+}
+.start_players  .swiper-icon.SuperNayr{
+    background-image: url(../../images/player_supernayr.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.Ndrev1ce{
+    background-image: url(../../images/player_ndrev1ce.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.NcSlasher{
+    background-image: url(../../images/player_ncslasher.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.awkarinnn{
+    background-image: url(../../images/player_awkarinnn.png);
+    background-size: contain;
+}
+.start_players  .swiper-icon.Sarah{
+    background-image: url(../../images/player_sarah_viloid.png);
+}
+.start_players  .swiper-icon.ZimzAjaib{
+    background-image: url(../../images/player_zimzajaib.png);
+}
+.start_players  .swiper-icon.Kelvin{
+    background-image: url(../../images/player_kelvin.png);
+}
+.start_players  .swiper-icon.Angela{
+    background-image: url(../../images/player_angela_tan.png);
+}
+.start_players  .swiper-icon.ZimzAjaib{
+    background-image: url(../../images/player_zimzajaib.png);
+}
+.start_players  .swiper-icon.Tepe46{
+    background-image: url(../../images/player_tepe46.png);
+}
+/* thailand player */
+.thailand .swiper-icon.Jannine_Weigel{
+    background-image: url(../../images/player_jannine_weigel.png);
+}
+.thailand .swiper-icon.Hellgate{
+    background-image: url(../../images/player_hellgate.png);
+}
+.thailand .swiper-icon.FeelingRock{
+    background-image: url(../../images/player_feelingRock.png);
+}
+.thailand .swiper-icon.Sir_Mikey{
+    background-image: url(../../images/player_sir_mikey.png);
+}
+.thailand .swiper-icon.Cop{
+    background-image: url(../../images/player_cop.png);
+}
+.thailand .swiper-icon.rubyz{
+    background-image: url(../../images/player_rubyz.png);
+}
+.thailand .swiper-icon.fern{
+    background-image: url(../../images/player_fern.png);
+}
+.thailand .swiper-icon.MIWA{
+    background-image: url(../../images/player_miwa.png);
+}
+.thailand .swiper-icon.nongnom{
+    background-image: url(../../images/player_nongnom.png);
+}
+.thailand .swiper-icon.Dew{
+    background-image: url(../../images/player_dew.png);
+}
+.thailand .swiper-icon.BOY_Pakorn{
+    background-image: url(../../images/player_boy_pakom.png);
+}
+.thailand .swiper-icon.Nhong_Thana{
+    background-image: url(../../images/player_nhong_thana.png);
+}
+.thailand .swiper-icon.Chippie_Sirin{
+    background-image: url(../../images/player_chippie_sirin.png);
+}
+.thailand .swiper-icon.Antone_Pinto{
+    background-image: url(../../images/player_antone_pinto.png);
+}
+.thailand .swiper-icon.Cutto_Lipta{
+    background-image: url(../../images/player_cutto_lipta.png);
+}
+.thailand .swiper-icon.Focus_Jirakul{
+    background-image: url(../../images/player_focus_jirakul.png);
+}
+.thailand .swiper-icon.Lowcost_Cosplay{
+    background-image: url(../../images/player_lowcost_cosplay.png);
+}
+.thailand .swiper-icon.Yokohama{
+    background-image: url(../../images/player_rain_yokohama.png);
+}
+.thailand .swiper-icon.Sudlokomteen{
+    background-image: url(../../images/player_sudlokomteen.png);
+}
+.thailand .swiper-icon.RETPUCHPLS{
+    background-image: url(../../images/player_retuchpls.png);
+}
+/* start_players video_glips end */
+
+/* player_select start */
+.player_select .select_Item{
+    display: inline-block;
+    float: left;
+    height: 0.66rem;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 50%;
+}
+/* player_select end */
+
+/* player_content start */
+.player_content,.player_select{
+	width: 7.5rem;
+	margin: 0 auto;
+}
+.player_content{
+    padding: 0.18rem 0.37rem 0 0.37rem;
+    border: 1px solid #EFA410;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+.player_content:nth-of-type(odd){
+	display: none;
+}
+.player_content .start_title{
+	width: 2.94rem;
+	margin-bottom: 0.3rem;
+    margin: 0 auto;
+}
+.player_content .rank_content{
+	display: none;
+}
+.player_content:nth-of-type(even) ul.rank_content:nth-child(3){
+	display: block;
+}
+.indonesia .play_icon{
+	background: url(../images/btn_play_indonesia_normal.png) no-repeat;
+	background-size: 100%;
+}
+.indonesia .play_icon.hover{
+	background-image: url(../images/btn_play_indonesia_push.png);
+}
+.thailand .play_icon{
+	background: url(../images/btn_play_thailand_normal.png) no-repeat;
+	background-size: 100%;
+}
+.thailand .play_icon.hover{
+	background-image: url(../images/btn_play_thailand_push.png);
+}
+.player_select{
+      margin-top: 0.57rem;
+    font-size: 0.4rem;
+    background: url(../images/nationalBox_tab_indonesia.png) no-repeat;
+    background-position: -0.03rem -0.12rem;
+    background-size: 7.57rem auto;
+}
+.player_select_hover{
+	background-image: url(../images/nationalBox_tab_thailand.png);
+}
+.player_content .rank_more{
+    margin: 0.1rem;
+    display: inline-block;
+}
+/* player_content end */
+
+/*rank start*/
+.ranking{
+	text-align: center;
+	margin-top: 0.31rem;
+}
+.ranking .ranking_title{
+	width: 2.02rem;
+    margin: 0 auto 0.17rem;
+}
+.rank_list{
+	background: url(../images/middel_tab.png) no-repeat;
+	height: 0.53rem;
+	background-size: 100% auto;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 0.3rem;
+}
+.rank_list li{
+    width: 1.11rem;
+    height: 0.24rem;
+    display: inline-block;
+    background-size: 0.9rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.rank_list li.rank_list0{
+    width: 1.16rem;
+	background-image: url(../images/btn_total_normal.png);
+}
+.rank_list li.rank_list1{
+	background-image: url(../images/btn_round1_normal.png);
+}
+.rank_list li.rank_list2{
+	background-image: url(../images/btn_round2_normal.png);
+}
+.rank_list li.rank_list3{
+	background-image: url(../images/btn_round3_normal.png);
+}
+
+.rank_list li.rank_list0.hover{
+	background-image: url(../images/btn_total_push.png);
+}
+.rank_list li.rank_list1.hover{
+	background-image: url(../images/btn_round1_push.png);
+}
+.rank_list li.rank_list2.hover{
+	background-image: url(../images/btn_round2_push.png);
+}
+.rank_list li.rank_list3.hover{
+	background-image: url(../images/btn_round3_push.png);
+}
+.rank_content .rank_item{
+    min-height: 0.65rem;
+    background: url(../images/img_box.png) no-repeat;
+    background-size: 6.87rem auto;
+    text-align: left;
+    background-position: -0.1rem -0.07rem;
+    padding: 0 0.02rem;
+}
+.rank_content .rank_item:after{
+    display: inline-block;
+    content: "";
+    width: 0;
+    line-height: 0.65rem;
+    height: 0.65rem;
+    vertical-align: middle;
+}
+.rank_content .rank_item .rank_fraction{
+	display: inline-block;
+	color: #EDA10F;
+	font-size: 0.15rem;
+	vertical-align: middle;
+	text-align: center;
+    width: 0.32rem;
+}
+.rank_content .rank_fraction:nth-of-type(1){
+    line-height: 0.44rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 0.75rem;
+}
+.rank_content .rank_item .rank_fraction:nth-of-type(2){
+    margin-right: 0.78rem;
+}
+.border_content{
+    display: inline-block;
+    box-sizing: border-box;
+    border-right: 1px solid #daae16;
+    margin-right: 0.1rem;
+    vertical-align: middle;
+}
+.rank_content  .border_content .rank_fraction{
+    width: 0.75rem;
+    box-sizing: border-box;
+    line-height: 0.45rem;
+    margin-right: 0;
+}
+.rank_content .player_name{
+    display: inline-block;
+    width: 2.49rem;
+    /*padding: 0.11rem 0 0.11rem 0;*/
+    box-sizing: border-box;
+    vertical-align: middle;
+    height: 0.6rem;
+    /*margin-top: 0.05rem;*/
+}
+.rank_content .player_name:after{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 0.6rem;
+}
+.rank_content .player_name li{
+	/*margin-right: 0.14rem;*/
+	font-size: 0.12rem;
+	display: inline-block;
+    margin-right: 0.05rem;
+    width: 1.12rem;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.rank_content .coming{
+    line-height: 0.65rem;
+    text-align: center;
+    width: 100%;
+}
+.rank_more{
+	margin-top: 0.24rem;
+	display: inline-block; 
+}
+.rank_more li{
+	display: inline-block;
+    width: 0.14rem;
+    height: 0.14rem;
+	background: url(../images/pagenation_off.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+.rank_more li.hover{
+	background-image: url(../images/pagenation_on.png);
+}
+/* rank end */
+
+/* dialog start */
+
+.dialog_container{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 999;
+	text-align: center;
+}
+.dialog_container .dialog_X{
+    display: block;
+    position: absolute;
+    content: "X";
+    width: 0.25rem;
+    height: 0.25rem;
+    background: rgba(0,0,0,.9);
+    border-radius: 50%;
+    font-size: 0.14rem;
+    line-height: 0.25rem;
+    right: -0.1rem;
+    top: -0.1rem;
+    cursor: pointer;
+}
+.dialog_mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.4);
+    display: none;
+}
+/* dialog end */
+@media screen and (max-width: 500px) {
+    .swiper-wrapper p,.swiper-container1 span,.swiper-container-video p,.rank_content span,.rank_content ul.player_name li,.rank_content .coming{
+        transform-origin: left;
+        transform: scale(0.5);
+        /*white-space: nowrap;*/
+        /* max-width: 0.45rem; */
+        display: inline-block;
+        text-align: center;
+    }
+    .swiper-container-video p:nth-of-type(1){
+        transform: scale(0.5) translateX(0rem);
+        width: 200%;
+    }
+    .swiper-container-video p:nth-of-type(2){
+        transform: scale(0.5) translateX(0.6rem);
+    }
+    .start_players span:nth-of-type(1){
+        transform: scale(0.5) translateX(50%);
+        height: 0.06rem;
+        white-space: nowrap;
+    }
+    .indonesia .start_players span:nth-of-type(2),.thailand .start_players span:nth-of-type(2){
+        width: 250%;
+        height: 0.55rem;
+        transform: scale(0.4) translateX(-70%);
+    }
+    .start_players span:nth-of-type(1){
+        transform: scale(0.5) translateX(-50%);
+        width: 200%;
+    }
+    .border_content span{
+        transform: scale(0.5) translateX(0.385rem);
+        padding-right: 0.685rem;
+    }
+    .rank_content ul.player_name li{
+        transform: scale(0.5) translateX(0.425rem);
+    }
+    .rank_content .player_name li:nth-of-type(1),.rank_content .player_name li:nth-of-type(3){
+        margin-right: 0.25rem;
+    }
+    .rank_content ul.player_name li{
+        width: 0.8rem;
+        height: 0.06rem;
+    }
+    .player_content{
+        margin-bottom: 0.1rem;
+    }
+    .swiper-container-video .swiper-slide{
+        margin-top: 0 !important;
+        padding-bottom: 0;
+    }
+    .rank_content .coming{
+        line-height: 0.65rem;
+        text-align: center;
+        transform: scale(0.5) translateX(0);
+        transform-origin: center;
+    }
+    .rank_content .rank_fraction:nth-of-type(1) {
+        margin-right: 0.45rem;
+    }
+    .rank_content .rank_item .rank_fraction:nth-of-type(2) {
+        margin-right: 0.68rem;
+    }
+    .rank_item .border_content span.rank_fraction{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .swiper-wrapper p,.swiper-container1 span,.swiper-container-video p,.rank_content span,.rank_content ul.player_name li{
+        transform-origin: left;
+        transform: scale(0.5);
+        white-space: nowrap;
+        /* max-width: 0.45rem; */
+        display: inline-block;
+        text-align: center;
+    }
+    .swiper-container-video p:nth-of-type(1){
+        transform: scale(0.5) translateX(0.2rem);    }
+    .swiper-container-video p:nth-of-type(2){
+        transform: scale(0.5) translateX(0.4rem);
+        height: 0.06rem;
+    }
+    .rank_content .coming{
+        transform: scale(0.5) translateX(0);
+        transform-origin: center;
+    }
+    .video_glips .swiper-slide p{
+        margin-top: 0.1rem;
+        transform: scale(0.5) translateX(0rem);
+        width: 200%;
+    }
+    .start_players .swiper-slide div.play_icon {
+        margin-top: 0.1rem;
+    }
+    .rank_content .player_name li:nth-of-type(1), .rank_content .player_name li:nth-of-type(3) {
+        margin-right: 0.35rem;
+    }
+    .border_content span {
+        transform: scale(0.5) translateX(0.385rem);
+        padding-right: 0.685rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .swiper-wrapper p,.swiper-container1 span,.swiper-container2 span,.swiper-container-video p,.rank_content span,.rank_content ul.player_name li{
+        transform-origin: left;
+        transform: scale(0.3);
+        white-space: nowrap;
+        /* max-width: 0.45rem; */
+        display: inline-block;
+        text-align: center;
+    }
+    .swiper-container-video p:nth-of-type(1){
+        /*transform: scale(0.47) translateX(0.1rem);  */
+        transform: scale(0.47) translateX(0rem);
+        width: 230%;
+    }
+    .swiper-container-video p:nth-of-type(2){
+        transform: scale(0.47) translateX(0.3rem);
+    }
+    .start_players span:nth-of-type(1){
+        transform: scale(0.47) translateX(5%);
+    }
+    .start_players .swiper-icon.Anggi + span,
+    .start_players .swiper-icon.Andy + span,
+    .start_players .swiper-icon.Ahmad + span,
+    .start_players .swiper-icon.Felliz + span,
+    .start_players .swiper-icon.Qyuu_Cosplayer + span,
+    .start_players .swiper-icon.Qyuu_Cosplayer + span{
+        transform: scale(0.47) translateX(25%);  
+    }
+    .indonesia .start_players span:nth-of-type(2),.thailand .start_players span:nth-of-type(2){
+        transform: scale(0.47) translateX(-0.2rem);
+    }
+    .rank_content .coming{
+        transform: scale(0.47) translateX(0);
+        transform-origin: center;
+    }
+    .rank_content li span:nth-of-type(1) {
+        transform: scale(0.47) translateX(0.385rem);
+    }
+    .rank_content .rank_item .rank_fraction:nth-of-type(2), .rank_content .rank_item .rank_fraction:nth-of-type(3), .rank_content .rank_item .rank_fraction:nth-of-type(4) {
+        transform: scale(0.47) translateX(0.385rem);
+    }
+    .rank_content .rank_item .rank_fraction:nth-of-type(3), .rank_content .rank_item .rank_fraction:nth-of-type(4) {
+        transform: scale(0.47) translateX(-0.4rem);
+    }
+    .rank_content ul.player_name li {
+        transform: scale(0.4) translateX(0.425rem);
+    }
+    .rank_content .player_name {
+        width: 2.2rem;
+        margin-top: 0;
+    }
+    .start_players .swiper-container1,.start_players .swiper-container2 {
+       height: 2.5rem;
+    }
+    .rank_content .player_name li:nth-of-type(1), .rank_content .player_name li:nth-of-type(3) {
+        margin-right: 0.25rem;
+    }
+}
+.swiper-container-video p{
+    white-space: inherit;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}

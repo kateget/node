@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Battlegrounds Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta property="og:site_name" content="Battlegrounds Mobile">
+<meta property="og:title" content="Battlegrounds Mobile">
+<meta property="og:description" content="Battlegrounds Mobile">
+<link rel="stylesheet" href="css/index.css" />
+<script>
+(function(){
+	var a=navigator.userAgent;
+	if(-1!=a.indexOf("iPhone")||-1!=a.indexOf("iPad")||-1!=a.indexOf("iPod")||-1!=a.indexOf("Android")){
+		self.location="m/";
+	}
+})();
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="page-bg">
+			<div class="page-bg1"></div>
+		</div>
+		<div class="main">
+			<div class="page1">
+				<div class="w1600">
+					<a class="logo" href="/">
+						<img src="images/icon.png" />
+					</a>
+					<div class="title">
+						<div class="title1">PLAYERUNKNOWN'S BATTLEGROUNDS MOBILE</div>
+						<div class="titie2">OFFICIALLY LICENSED MOBILE PUBG</div>
+					</div>
+					<a class="playvideo" href="javascript:showVideo();">
+						<img src="images/play.png" />
+					</a>
+					<img class="biglogo" src="images/biglogo.png" />
+					<a class="ios" href="">
+						<img src="images/ios.png" />
+					</a>
+					<a class="gp" href="">
+						<img src="images/gp.png" />
+					</a>
+					<a class="fb" href="javascript:;" onclick="javascript:window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent('https://www.baidu.com'), 'newWindow', 'width=800, height=400','center');void(0);">
+						<img src="images/fb.png" />
+					</a>
+					<a class="tw" href="javascript:;" onclick="javascript:window.open('https://twitter.com/home/?status='+encodeURIComponent(document.title)+' '+encodeURIComponent(location.href), 'newWindow', 'width=800, height=400','center');void(0);">
+						<img src="images/tw.png" />
+					</a>
+					<a class="yt" href="">
+						<img src="images/yt.png" />
+					</a>
+
+					<img class="bottomlogo" src="images/bottomlogo.png">
+					<div class="bottomtitle">
+						<div class="title1">COPYRIGHT 2017 PUBG CORPORATION</div>
+						<div class="titie2">PLAYERUNKNOWN'S BATTLEGROUNDS AND PUBG ARE REGISTERED TRADEMARKS, TRADEMARKS OR SERVICE MARKS OF PUBG.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="video_player" id="vplayer"></div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript">
+		function showVideo(){
+			$('.video_player').css('z-index', '100');
+			$('#vplayer').append('<iframe class="video_frame" src="https://www.youtube.com/embed/JM_UdSUW1ao" frameborder="0" allowfullscreen></iframe>'+
+			'<a class="video_close" href="javascript:closeVideo()" title="X">X</a>'+
+			'<div id="vmask" class="video_mask" onclick="javascript:closeVideo()"></div>');
+		}
+		function closeVideo(){
+			$('#vplayer').html("");
+			$('.video_player').css('z-index', '-1');
+		}
+	</script>
+</body>
+</html>
+<!--#include virtual="/{# LANG #}/inc/stats.shtml"-->

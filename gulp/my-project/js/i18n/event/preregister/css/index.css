@@ -1,0 +1,170 @@
+/* reset */
+body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;-webkit-text-size-adjust:none;}
+header,nav,section,article,footer,figure,figcaption{display:block;}
+ol,ul{margin:0;padding:0;}
+fieldset{border:none;margin:0;padding:0;}
+a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+em,strong,i{font-weight:normal;font-style:normal;}
+a {text-decoration:none;}
+.hide {display:none;}
+.c:before,.c:after {content:"";display:table;}
+.c:after {clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+.pr {position:relative;}
+.pa {position:absolute;}
+img{border: none;}
+:focus{outline: none;}
+.db {display:block;text-indent:-999em;}
+html,body{width: 100%;background-color: #000;}
+
+@font-face {
+	font-family: title;
+	src: url("../font/Teko-Regular.ttf");
+  }
+
+.wrap {
+	position: relative;
+}
+
+.page-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    /*z-index: -1;*/
+}
+
+.page-bg1{
+    width:100%;
+    height: 1235px;
+    background: url(../images/PC-bg.jpg) no-repeat 50% 0;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.page1{
+    height: 1235px;
+    width: 100%;
+}
+
+.w1600{
+    width: 1600px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.page1 .logo{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 18px;
+    left: 47px;
+}
+
+.page1 .title {
+	position: absolute;
+	top: 29px;
+	left: 195px;
+	color: white;
+	font-family: title;
+}
+
+.title .title1 {
+	font-size: 28px;
+	color: #feab02;
+}
+.title .title2 {
+	font-size: 18px;
+	color: white;
+}
+
+.page1 .playvideo {
+	position: absolute;
+	top: 485px;
+	width: 135px;
+	height: 132px;
+	left: 732px;
+}
+
+.page1 .biglogo {
+	position: absolute;
+	top: 653px;
+	width: 523px;
+	height: 198px;
+	left: 538px;
+}
+
+.page1 .ios {
+	position: absolute;
+	top: 862px;
+	width: 360px;
+	height: 107px;
+	left: 425px;
+}
+
+.page1 .gp {
+	position: absolute;
+	top: 862px;
+	width: 360px;
+	height: 107px;
+	left: 814px;
+}
+
+.page1 .fb {
+	position: absolute;
+	top: 174px;
+	width: 30px;
+	height: 30px;
+	left: 1397px;
+}
+
+.page1 .tw {
+	position: absolute;
+	top: 174px;
+	width: 30px;
+	height: 30px;
+	left: 1435px;
+}
+
+.page1 .yt {
+	position: absolute;
+	top: 174px;
+	width: 30px;
+	height: 30px;
+	left: 1473px;
+}
+
+.page1 .bottomlogo {
+	position: absolute;
+	bottom: 52px;
+	left: 300px;
+	width: 310px;
+	height: 59px;
+}
+
+.page1 .bottomtitle {
+	position: absolute;
+	bottom: 68px;
+	left: 641px;
+	color: #717171;
+	font-size: 12px;
+}
+
+/*--------------Video-------------------*/
+.video_player{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index:-1;}
+.video_frame{position: absolute;top:20%;left:25%;width:50%;height: 50%;z-index: 100;}
+.video_close{width: 32px;height: 32px;color: #fff;position: absolute;left: 74.5%;top: 15.5%;z-index: 100;text-align: center;}
+.video_mask{background-color:#000;position: absolute;height: 100%;z-index: 99;width: 100%;left: 0px;top: 0px;opacity: 0.7;display: block;}

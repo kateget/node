@@ -1,0 +1,77 @@
+<script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        setTimeout(function() {
+            $('body').addClass('mclass');
+        }, 1000);
+    }
+</script>
+<!-- footer -->
+<!--#include virtual="/common/inc/footer.shtml"-->
+<!-- Facebook Pixel Code -->
+
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2213620032242828');
+    fbq('track', "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2213620032242828&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script type="text/javascript">
+    $(function() {
+        var $icon = $(".slide_icon"),
+            $ul = $icon.find("ul");
+
+        function jump() {
+            var hrefUrl = window.location.href,
+                index = 0;
+            switch (true) {
+                case /pwk\/index\.shtml/.test(hrefUrl):
+                    index = 4;
+                    break;
+                case /news\.shtml|news_detail\.shtml/.test(hrefUrl):
+                    index = 2;
+                    break;
+                case /media\.shtml/.test(hrefUrl):
+                    index = 3;
+                    break;
+            };
+            $(".nav_list > li")
+                .removeClass('on')
+                .eq(index).addClass('on')
+        }
+        jump();
+        // down
+        $('.down').on('click', function() {
+            $('.slec.{# LANG #}').slideToggle();
+        })
+        $icon.click(function() {
+            var $this = $(this);
+            $this.siblings(".slide_icon_d").find(".event_second").slideToggle().end().toggleClass("slide_icon_d");
+            $this.find($ul).slideToggle(200).end().toggleClass('slide_icon_d');
+        });
+        $(".lang_drop").click(function() {
+            $(".lang_list").slideToggle();
+        });
+    })
+</script>
+<!--#include virtual="/{# LANG #}/inc/stats.shtml"-->

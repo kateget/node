@@ -1,0 +1,76 @@
+<!-- 页面通用的 header 配置 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/{# LANG #}/css/common.css" />
+<link rel="stylesheet" href="/{# LANG #}/css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" integrity="sha256-R7DnEprdmCwOOU8N+o2WIebJ5BJoWbJuGtJcGN7w2BI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="/common/css/all.css" />
+<script type="application/ld+json">
+    {
+        "@context": "//www.pubgmobile.com/en-US/",
+        "@type": "MobileGame",
+        "name": [{
+            "@language": "en",
+            "@value": "PUBG MOBILE"
+        }],
+        "description": [{
+            "@language": "en",
+            "@value": "Official PUBG on mobile"
+        }],
+        "genre": [
+            "Action",
+            "Third-person shooter"
+        ],
+        "url": "//www.pubgmobile.com/en-US/",
+        "image": "http://pubgmobile.proximabeta.com/event/pics/youtubegaming1024_1440.jpg",
+        "screenshot": "http://pubgmobile.proximabeta.com/event/pics/youtubegaming2560_1440.jpg",
+        "sameAs": [
+            "https://www.youtube.com/channel/UCKuBf7CRNf4OYoDyTtAL5fg"
+        ],
+        "trailer": {
+            "@type": "VideoObject",
+            "url": "https://www.youtube.com/watch?v=uCd6tbUAy6o",
+            "inLanguage": "en"
+        },
+        "exampleOfWork": [{
+            "@type": "MobileGame",
+            "gamePlatform": [
+                "http://en.wikipedia.org/wiki/iOS",
+                "http://en.wikipedia.org/wiki/Android"
+            ],
+            "contentRating": "PEGI 16+",
+            "releasedEvent": {
+                "@type": "PublicationEvent",
+                "startDate": "2018-03-20",
+                "location": {
+                    "@type": "Place",
+                    "name": "EU"
+                }
+            }
+        }, {
+            "@type": "MobileGame",
+            "gamePlatform": [
+                "http://en.wikipedia.org/wiki/iOS",
+                "http://en.wikipedia.org/wiki/Android"
+            ],
+            "contentRating": "ESRB M",
+            "releasedEvent": {
+                "@type": "PublicationEvent",
+                "startDate": "2018-3-20",
+                "location": {
+                    "@type": "Country",
+                    "name": "US"
+                }
+            }
+        }]
+    }
+</script>
+<script>
+    (function() {
+        var a = navigator.userAgent;
+        if (-1 != a.indexOf("iPhone") || -1 != a.indexOf("iPad") || -1 != a.indexOf("iPod") || -1 != a.indexOf("Android")) {
+            self.location = "/{# LANG #}/m/";
+        }
+    })();
+</script>

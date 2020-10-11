@@ -1,0 +1,611 @@
+@font-face {
+    font-family: 'HeadlinerNo.45';   /*字体名称*/
+    src: url('../font/HeadlinerNo.45.ttf');       /*字体源文件*/
+}
+
+html {
+    font-size: 17.3px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: ' ';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wrap {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #fafafa;
+}
+
+.wrap > session {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 1200px;
+    height: 1080px;
+    margin: auto;
+    background-image: url(../images/pwk-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    /* background-size: cover; */
+}
+
+.wrap > session.header {
+    height: 962px;
+    background-position: 50% 0;
+}
+
+session.header .small-slogan {
+    position: relative;
+    z-index: 90;
+    top: 12%;
+    left: 73%;
+    width: 237px;
+    height: 95px;
+    background-image: url(../images/slogn.png);
+    background-size: cover;
+}
+
+session.header .small-slogan-logo{
+    left: 13%;
+    float: left;
+    position: absolute;
+    top: 12%;
+    background-position: -512px 0px;
+    width: 179px;
+    height: 133px;
+}
+
+.joining-text {
+    position: relative;
+    top: 51.56%;
+    width: 1078px;
+    margin: auto;
+}
+
+.joining-text .title {
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+.joining-text hr {
+    height: .2rem;
+    margin: 0 0 1.4rem;
+    border: none;
+    background-color: #535353;
+}
+
+.joining-text .sub-title {
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.session-arrow-down {
+    position: relative;
+    z-index: 2;
+    top: 55.2%;
+    width: 105px;
+    height: 54px;
+    margin: auto;
+    animation: pulse 2s .2s ease both infinite;
+    background-position: -104px -53px;
+}
+
+.image-text {
+    overflow: hidden;
+    color: transparent !important;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-size: 950px;
+}
+
+.joining-text .title.image-text {
+    width: 797px;
+    height: 67px;
+    margin: auto auto 1.5rem;
+    background-position: 0 -1711px;
+}
+
+.joining-text .sub-title.image-text {
+    width: 1078px;
+    margin: auto;
+    height: 62px;
+    background-position: 39px -1956px;
+    background-size: 1039.44px;
+}
+
+.wrap > session.sample-prizes {
+    font-family: 'HeadlinerNo.45';
+    height: 858px;
+    margin-bottom: 4.5rem;
+    padding: 2rem 0 5rem;
+    background-position: 50% -940px;
+}
+
+.sample-prizes > .title.image-text {
+    width: 327px;
+    height: 53px;
+    margin: auto auto 3rem;
+    background-position: 0 -1849px;
+}
+
+.sample-prizes > .sub-title {
+    position: relative;
+    width: 1078px;
+    height: .2rem;
+    margin: auto;
+    background-color: #a9a9a9;
+}
+
+.sample-prizes > .sub-title > .image-text {
+    position: relative;
+    z-index: 2;
+    top: -15px;
+    display: block;
+    width: 134px;
+    height: 30px;
+    margin: auto;
+    background-color: #f5f5f5;
+    background-position: 29px -1904px;
+}
+
+session.sample-prizes > .prizes {
+    width: 1078px;
+    margin: 4rem auto auto;
+}
+
+.sample-prizes > .prizes > .prize {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 346px;
+    height: 225px;
+    margin: 0 14.2px 14.2px 0;
+}
+
+.sample-prizes > .prizes > .prize:nth-child(3),
+.sample-prizes > .prizes > .prize:nth-child(6),
+.sample-prizes > .prizes > .prize:nth-child(9) {
+    margin-right: 0;
+}
+
+.sample-prizes > .prizes > .prize:not(:last-child):hover:before {
+    transform: scale(1.15);
+}
+
+.sample-prizes > .prizes > .prize:before {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 14.2px 14.2px 0;
+    content: '';
+    transition: all ease 1s;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-position: 1px -672px;
+    background-size: 1079.44px;
+}
+
+.sample-prizes > .prizes > .prize2:before {
+    background-position: -344px -673px;
+}
+
+.sample-prizes > .prizes > .prize3:before {
+    background-position: -688px -673px;
+}
+
+.sample-prizes > .prizes > .prize4:before {
+    background-position: 0 -896px;
+}
+
+.sample-prizes > .prizes > .prize5:before {
+    background-position: -344px -895px;
+}
+
+.sample-prizes > .prizes > .prize6:before {
+    background-position: -690px -897px;
+}
+
+.sample-prizes > .prizes > .prize7:before {
+    background-position: 1px -1122px;
+}
+
+.sample-prizes > .prizes > .prize8:before {
+    background-position: -344px -1122px;
+}
+
+.sample-prizes > .prizes > .prize9:before {
+    background-position: -690px -1122px;
+}
+
+.prizes > .prize .icon {
+    position: relative;
+    position: relative;
+    top: 15%;
+    width: 21%;
+    height: 36%;
+    margin: auto;
+    background-image: url(../images/pwk-icon-text.png);
+    background-position: -233px -7px;
+    background-size: 962.44px;
+}
+
+.prizes > .prize .text {
+    font-size: 1rem;
+    position: relative;
+    top: 22%;
+    width: 90%;
+    margin: auto;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.prizes > .prize2 .icon {
+    background-position: -302px -11px;
+}
+
+.prizes > .prize3 .icon {
+    top: 16%;
+    height: 36%;
+    background-position: -373px -11px;
+}
+
+.prizes > .prize4 .icon {
+    background-position: -441px -12px;
+}
+
+.prizes > .prize5 .icon {
+    background-position: -233px -95px;
+}
+
+.prizes > .prize6 .icon {
+    height: 36%;
+    background-position: -302px -91px;
+}
+
+.prizes > .prize7 .icon {
+    height: 36%;
+    background-position: -373px -91px;
+}
+
+.prizes > .prize8 .icon {
+    height: 36%;
+    background-position: -441px -91px;
+}
+
+.prizes > .prize .text .title {
+    color: #feb600;
+}
+
+.prizes > .prize9 .text,
+.prizes > .prize9 .icon {
+    display: none;
+}
+
+.sample-prizes .session-arrow-down {
+    top: 7%;
+    background-position: -106px -110px;
+}
+
+.wrap > session.apply {
+    font-family: 'HeadlinerNo.45';
+    height: 896px;
+    background-position: 50% -1912px;
+}
+
+.wrap > session.apply > .title {
+    position: relative;
+    top: 19%;
+}
+
+.wrap > session.apply > .title > .title-left {
+    top: 21%;
+    left: 26.6%;
+    width: 283px;
+    height: 113px;
+    margin: auto;
+    transform: scale(.9);
+    background-position: 2px -423px;
+}
+
+.wrap > session.apply > .title > div {
+    position: absolute;
+}
+
+.wrap > session.apply > .title > .title-right {
+    font-size: 27px;
+    font-weight: bold;
+    left: 62%;
+    margin-top: 38px;
+    letter-spacing: 0;
+    color: #111;
+}
+
+session.apply > .title > .title-right .text-orange {
+    color: #a7340d;
+}
+
+.wrap > session.apply > .apply-area {
+    position: relative;
+    top: 53%;
+    box-sizing: border-box;
+    width: 1078px;
+    height: 319px;
+    margin: auto;
+    border: 3px solid #fff;
+    color: #a6a6a6;
+}
+
+session.apply > .apply-area > .btn {
+    position: relative;
+    float: left;
+    width: 451.5px;
+    height: 155px;
+    margin: 79px 42px;    /* transition: all ease 1s; */
+    cursor: pointer;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-position: 0 -1686px;
+    background-size: 1109px;
+}
+
+session.apply > .apply-area > .btn-login-in {
+    margin-left: 43px;
+}
+
+session.apply > .apply-area > .btn p:first-child {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 35px 0 10px;
+    letter-spacing: 4px;
+    color: #150a09;
+}
+
+session.apply > .apply-area > .btn p:last-child {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #543103;
+}
+
+session.apply > .apply-area > .btn:hover {
+    background-position: 0 -1530px;
+}
+
+/*.wrap > session.apply > .apply-area:before {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, .4);
+}*/
+
+/*.wrap > session.apply > .apply-area:after {
+    font-size: 91.3PX;
+    line-height: 7rem;
+    position: absolute;
+    z-index: 3;
+    top: 93.34px;
+    left: 114px;
+    display: block;
+    width: 836px;
+    height: 122px;
+    content: 'STAY TUNED';
+    color: #e6e6e6;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-position: 0 -1390px;
+    background-size: 1109px;
+}*/
+/*.wrap > session.apply > .apply-area:after {
+    font-size: 28px;
+    line-height: 28px;
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 114px;
+    display: block;
+    width: 836px;
+    content: 'THE PLAYER WELL KNOWN PROGRAM IS CURRENTLY AVAILABLE ONLY FOR CONTENT CREATORS BASED IN USA. OTHER COUNTRIES WILL FOLLOW!';
+}*/
+
+.wrap > session.questions {
+    font-size: .8rem;
+    padding-top: 3rem;
+    color: #000;
+    background-image: none;
+}
+
+.wrap > session.questions > .title {
+    width: 617px;
+    height: 3rem;
+    margin: auto;
+    background-position: 2px -651px;
+}
+
+session.questions #question-list {
+    width: 1078px;
+    margin: 106px auto auto;
+    text-align: left;
+}
+
+session.questions .question p {
+    display: none;
+    transition: all ease .5s;
+}
+
+session.questions .question h4 {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.wrap > session.questions {
+    font-size: .8rem;
+    height: auto;
+    margin-bottom: 11rem;
+    padding-top: 3rem;
+    color: #000;
+    background-image: none;
+    font-family: "arial regular";
+}
+
+.wrap > session.questions > .title {
+    width: 518px;
+    height: 52px;
+    margin: 1rem auto 0;
+    background-position: 2px -539px;
+}
+
+session.questions .question {
+    margin-bottom: 23px;
+    padding-bottom: 18px;
+    animation-duration: 1s;
+    border-bottom: 1px solid #ddd;
+    animation-fill-mode: both;
+}
+
+session.questions .question h4.active {
+    margin-bottom: 17px;
+    color: #d07900;
+    line-height: 18px;
+}
+
+session.questions .question h4.active ~ p {
+    margin-bottom: 30px;
+    line-height: 1.71;
+}
+
+.wrap > .flot-navigator {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    width: 40px;
+    height: 300px;
+    background-image: url(../images/pwk-icon-text.png);
+    background-position: -893.44px 0;
+    background-size: 933.44px;
+    z-index: 999;
+}
+
+.wrap > .flot-navigator > div {
+    position: relative;
+    width: 40px;
+    height: 51px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-size: 933.44px;
+}
+
+.wrap > .flot-navigator > div:nth-child(1) {
+    margin-top: 31px;
+    background-position: -4px 0;
+}
+
+.wrap > .flot-navigator > div:nth-child(2) {
+    background-position: -4px -50px;
+}
+
+.wrap > .flot-navigator > div:nth-child(3) {
+    background-position: -4px -100px;
+}
+
+.wrap > .flot-navigator > div:nth-child(4) {
+    background-position: -4px -150px;
+}
+
+.wrap > .flot-navigator .share-links {
+    position: absolute;
+    top: 12px;
+    right: 44px;
+    overflow: hidden;
+    width: 0;
+    padding: 3px 0;
+    transition: all ease 1s;
+    white-space: nowrap;
+    background-color: #2c2c2c;
+}
+
+.wrap > .flot-navigator > div:hover {
+    background-position-x: -54px;
+}
+
+.wrap > .flot-navigator > div.share:hover .share-links {
+    width: 200px;
+}
+
+.flot-navigator .share-links a {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: transparent;
+    background-image: url(../images/pwk-icon-text.png);
+    background-repeat: no-repeat;
+    background-position: -120px 0px;
+    background-size: 1118px;
+}
+
+.flot-navigator .share-links a:nth-child(2) {
+    background-position-x: -150px;
+}
+
+.flot-navigator .share-links a:nth-child(3) {
+    background-position-x: -179px;
+}
+
+.flot-navigator .share-links a:nth-child(4) {
+    background-position-x: -209px;
+}
+
+.flot-navigator .share-links a:nth-child(5) {
+    background-position-x: -240px;
+}
+
+.flot-navigator .share-links a:hover {
+    background-position-y: -30px;
+}
+
+.wrap > .flot-navigator > div > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.prizes > .prize .text {
+    font-size: 27px;
+}
+
+.wrap > .flot-navigator > div.top {
+    background-image: none;
+    position: relative;
+    top: 30px;
+    font-size: 24px;
+    color: #666;
+    font-family: 'HeadlinerNo.45';
+    height: auto;
+    cursor: pointer;
+    right: -4px;
+}
+
+.wrap > .flot-navigator > div.top > .arrow {
+    position: relative;
+    left: -3px;
+    font-size: 21px;
+    top: -1px;
+}

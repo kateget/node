@@ -1,0 +1,164 @@
+<div class="top_nav {# LANG #}">
+    <div class="top_main c">
+        <div class="top_log c">
+            <a href="/{# LANG #}/index.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_logo'});">
+                <% 
+					var lang = '{# LANG #}';
+					if(lang == 'TW') {
+				%>
+                    <img src="/{# LANG #}/images/icon_logo_tw.png" width="128" height="128" alt="" />
+                    <% 
+					} else {
+				%>
+                        <img src="/common/images/icon_logo.jpg" width="128" height="128" alt="" />
+                        <% 
+					}
+				%>
+            </a>
+            <% 
+					var lang = '{# LANG #}';
+					if(lang == 'TW') {
+                %>
+                <h1 class="top_tit tw">
+                    PUBG MOBILE
+                    <span>絕地求生M</span>
+                </h1>
+
+                <% 
+					} else {
+                %>
+                    <h1 class="top_tit">
+                        PUBG MOBILE
+                        <span>OFFICIAL PUBG ON MOBILE</span>
+                    </h1>
+
+                    <% 
+					}
+				%>
+
+
+        </div>
+        <ul class="nav_list">
+            <li class="on home">
+                <a href="/{# LANG #}/index.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_home'});">HOME</a>
+            </li>
+            <li class="slide_icon slide_icon_c"><span>ROYALE PASS</span>
+                <ul class="event_second">
+                    <li><a href="/event/royalepass11/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'m_nav_royalepass11'});">{# ROYALE PASS SEASON 11 #}</a></li>
+                    <li><a href="/event/royalepass10/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_royalepass9'});">{# ROYALE PASS SEASON 10 #}</a></li>
+                    <li><a href="/event/royalepass9/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_royalepass9'});">{# ROYALE PASS SEASON 9 #}</a></li>
+                    <li><a href="/event/royalepass8/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_royalepass8'});">{# ROYALE PASS SEASON 8 #}</a></li>
+                    <li><a href="/event/royalepass7/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_royalepass7'});">{# ROYALE PASS SEASON 7 #}</a></li>
+                    <li><a href="/event/royalepass6/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_roaylepass6'});">{# ROYALE PASS SEASON 6 #}</a></li>
+                    <li><a href="/event/royalepass5/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_roaylepass5'});">{# ROYALE PASS SEASON 5 #}</a></li>
+                    <li><a href="/event/royalepass4/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_roaylepass4'});">{# ROYALE PASS SEASON4 #}</a></li>
+                </ul>
+            </li>
+            <li class="slide_icon slide_icon_c"><span>NEWS</span>
+                <ul class="event_second">
+                    <li><a href="/{# LANG #}/news.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_news'});">NEWS</a></li>
+                    <li><a href="https://tencentgames.helpshift.com/a/pubgm/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_faqs'});">FAQS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/{# LANG #}/media.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_media'});">MEDIA</a>
+            </li>
+            <!-- <li>
+                <a href="/{# LANG #}/pwk/index.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_pwk'});">Creators Program</a>
+			</li> -->
+            <li>
+                <a href="/esports" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_esports'});">ESPORTS</a>
+            </li>
+            <li class="slide_icon slide_icon_c"><span>EVENTS</span>
+                <ul class="event_second">
+                    <li><a href="/event/spring2020/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'nav_prosperous_spring'});">{# Prosperous Spring #}</a></li>
+                        <li><a href="/event/winterfestival/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'nav_winterfestival'});">{# Winter Festival #}</a></li>
+                    <li><a href="/event/halloweeks2019/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'nav_halloweeks'});">{# Halloweeks 2019 #}</a></li>
+                    <li><a href="/event/treasuresoftheSevenSeas/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_Treasures'});">{# Treasures of the Seven Seas #}</a></li>
+                    <li><a href="https://www.pubgmobile.com/event/teamup/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_teamup'});">{# TEAM UP 100 #}</a></li>
+                    <li><a href="/event/teamDeathmatchMode/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_team_death_match_mode'});">{# Team Deathmatch Mode #}</a></li>
+                    <!-- <li><a href="/event/survive_till_dawn2/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_dark_night'});">{# Darkest Night #}</a></li> -->
+                    <li><a href="/event/1stYearAnniv/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_oneyear'});">{# 1st Year Anniv. #}</a></li>
+                    <li><a href="/event/eu/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_eu'});">{# Zombie Dancing & Cosplay #}</a></li>
+                    <!-- <li><a href="/event/re2/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_re2'});">{# SURVIVE TILL DAWN. #}</a></li>
+                    <li><a href="/event/residentevil2/" onclick="gtag('event','x_jump',{'event_category':'website','event_label':'pc_nav_residentevil2'});">{# PUBG MOBILE X RE:2 #}</a></li> -->
+                    <li><a href="/event/vikendi/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_vikendi'});">Showdown in Vikendi</a></li>
+                    <li><a href="/en/event/halloweeks/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_halloweeks'});">HALLOWEEKS</a></li>
+                    <li><a href="/en/event/bape/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_bape'});">PUBG MOBILE X BAPE</a></li>
+                </ul>
+            </li>
+            <li class="slide_icon"><a href="/event/brandassets/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'nav_brandassets'});"><span>{# Brand Assets #}</span></a></li>
+            <!-- <li>
+                <a href="/pay/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_pay'});">{# PAYMENT #}</a>
+            </li> -->
+        </ul>
+
+        <div class="lang_box {# LANG #}">
+            <div class="lang_drop">
+                <p class="lang_on"><em>EN</em></p>
+                <em class="lang_arrow"></em>
+            </div>
+            <ul class="lang_list">
+                <li><a href="/{# LANG #}/">English</a></li>
+                <li><a href="https://pubgmobile.com.br/">Português (BR)</a></li>
+                <!-- <li><i></i>Russian</li>
+				<li><i></i>German</li>
+				<li><i></i>Thailand</li>
+				<li><i></i>Korean</li>
+				<li><i></i>France</li>
+				<li><i></i>Portuguese</li>
+				<li><i></i>Spanish</li>
+				<li><i></i>Turkey</li>
+				<li><i></i>Vietnam</li>
+				<li><i></i>Japannes</li> -->
+            </ul>
+        </div>
+        <div class="top_btn {# LANG #}">
+            <a href="/pay/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_pay'});">{# PAYMENT #}</a>
+            <a class="down" href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" target="_blank" onclick="gtag('event','x_click',{'event_category':'website','event_label':'nav_download'});">{# DOWNLOAD #}</a>
+            <!-- <a class="home tw" href="/{# LANG #}/index.shtml" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_home'});">主頁</a> -->
+            <a class="down tw" href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_nav_download'});">下載</a>
+            <!-- <% 
+                        var lang = '{# LANG #}';
+                        if(lang == 'en-US') {
+                        %>
+                <ul class="slec en-US">
+                    <li class="app_li">
+                        <a href="https://app.adjust.com/4yxckw " target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_nav_app'});">
+	                   App Store    
+	                </a>
+                    </li>
+                    <li class="apk_li">
+                        <a href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+	                   APK Download     
+	                </a>
+                    </li>
+                </ul>
+                <% } else { %>
+                    <ul class="slec TW">
+                        <li class="app_li">
+                            <a href="https://app.adjust.com/ndvddx1" target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_nav_app'});">
+						App Store    
+					</a>
+                        </li>
+                        <li class="google">
+                            <a href="https://play.google.com/store/apps/details?id=com.rekoo.pubgm" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_google'});">
+                        Google Play
+                    </a>
+                        </li>
+                        <li class="apk_li">
+                            <a href="https://web.gpubgm.com/m/Website/xiaobao/Android_IG0160_No69_0.16.0.11460_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" onclick="fbq('track','CompleteRegistration');gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_header_apk'});">
+	                   APK Download     
+	                </a>
+                        </li>
+                    </ul>
+
+                    <% } %> -->
+        </div>
+    </div>
+    <!-- <p class="par_coor">
+		<img src="/{# LANG #}/images/coor_dinate.png" width="1112" height="33" alt="" />
+	</p> -->
+</div>
+<!-- 
+<script type="text/javascript" src="/{# LANG #}/js/utils.js"></script> -->

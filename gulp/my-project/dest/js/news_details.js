@@ -1,0 +1,1 @@
+!function(){url=encodeURIComponent(location.href);var t=$("p.share_icon a");t[0].href="https://www.facebook.com/sharer/sharer.php?u="+url,t[1].href="https://twitter.com/intent/tweet?text="+url,t[2].href="http://vk.com/share.php?url="+url}();

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Battlegrounds Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta property="og:site_name" content="Battlegrounds Mobile">
+<meta property="og:title" content="Battlegrounds Mobile">
+<meta property="og:description" content="Battlegrounds Mobile">
+<link rel="stylesheet" href="css/index.css" />
+<script>
+    (function (win,doc){
+        if (!win.addEventListener) return;
+        var html=doc.documentElement,w=750;
+        function setFont() {
+            var cliWidth=html.clientWidth,cliHeight=html.clientHeight;
+            html.style.fontSize=100*(cliWidth/w)+'px';
+            doc.getElementsByTagName("body")[0].style.display="block";
+        }
+        win.addEventListener('resize',setFont,false);
+        doc.addEventListener('DOMContentLoaded',setFont,false);
+    })(window,document);   
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="page-bg1">
+			<a href="/">
+				<img class="logo" src="images/icon.png" />
+			</a>
+			<div class="title">
+				<div class="title1">PLAYERUNKNOWN'S BATTLEGROUNDS MOBILE</div>
+				<div class="title2">OFFICIALLY LICENSED MOBILE PUBG</div>
+			</div>
+			<a href="javascript:pop_vid('https://www.youtube.com/embed/JM_UdSUW1ao')">
+				<img class="playvideo" src="images/play.png" />
+			</a>
+			<img class="biglogo" src="images/biglogo.png" />
+			<a href="">
+				<img class="ios" src="images/ios.png" />
+			</a>
+			<a href="">
+				<img class="gp" src="images/gp.png" />
+			</a>
+			<a href="javascript:;" onclick="javascript:window.location = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent('https://www.baidu.com');">
+				<img class="fb" src="images/fb.png" />
+			</a>
+			<a href="javascript:;" onclick="javascript:window.location = 'https://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href);">
+				<img class="tw" src="images/tw.png" />
+			</a>
+			<a href="">
+				<img class="yt" src="images/yt.png" />
+			</a>
+
+			<img class="bottomlogo" src="images/bottomlogo.png">
+		</div>
+	</div>
+
+	<div class="b_bg" style="display: none;"></div>
+	<div class="pop_vid" style="display: none;">
+		<a href="javascript:hidepop('.pop_vid');" class="close">×</a>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript">
+	function pop(e){
+		$(e).show();
+		$(".b_bg").show();
+	}
+	function hidepop(e){
+		$(e).hide();
+		$(".b_bg").hide();
+		$(".video_frame").remove();
+	}
+	function pop_vid(v){
+		if(v.length<10) { alert("Coming soon!"); return;}
+		pop(".pop_vid");	
+		$('<iframe class="video_frame" src="'+v+'" frameborder="0" width="100%" height="250" allowfullscreen></iframe>').appendTo(".pop_vid");	
+	}
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+		$(".gp").hide();
+	} else if (/(Android)/i.test(navigator.userAgent)) {
+		$(".ios").hide();
+	} else {
+		$(".gp").hide();
+		$(".ios").hide();
+	};
+	</script>
+</body>
+</html>
+<!--#include virtual="/{# LANG #}/inc/stats.shtml"-->

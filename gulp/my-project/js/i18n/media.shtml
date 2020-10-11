@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Official PUBG on mobile</title>
+<meta name="Keywords" content="pubg mobile media,pubg media"/>
+<meta property="og:url" content="https://www.pubgmobile.com"/>
+<meta property="og:site_name" content="Official PUBG on mobile"/>
+<meta property="og:title" content="Official PUBG on mobile"/>
+<meta property="og:description" content="In this page you will find the most recent PUBG Mobile trailers and official videos, as well as a selection of video and streams from PUBG Mobile players from all over the world!"/>
+<meta property="og:url" content="http://www.pubgmobile.com">
+<!--#include virtual="inc/header.shtml"-->
+<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<script type="text/javascript">
+	var current_page = 'media';
+</script>
+<!--#include virtual="inc/fbshare.html"-->
+<!--#include virtual="inc/nav.html"-->
+<div class="wrap">
+	<div class="page_top media_top">
+		<h2 class="media_tit spr_page">MEDIA</h2>
+	</div>
+	<div class="media_main">
+		<ul class="tab_nav c">
+			<li class="on">
+				<a href="javascript:;">ALL</a>
+			</li>
+			<li>
+				<a href="javascript:;">VIDEO</a>
+			</li>
+			<li>
+				<a href="javascript:;">GALLERY</a>
+			</li>
+		</ul>
+		<div class="main_ct">
+			<div class="tab_type">
+				<ul class="video_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.media.allvideo) %>"-->
+				</ul>
+			</div>
+			<div class="tab_type" style="display: none;">
+				<ul class="video_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.media.video) %>"-->
+				</ul>
+			</div>
+			<div class="tab_type" style="display: none;">
+				<ul class="video_list c">
+					<!--#include virtual="<%= i18n.pick(ams.pc.media.gallery) %>"-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ly_pop_wrap" id="mediaPopup" style="display:none;">        
+	<div class="ly_pop ly_media">
+		<a href="javascript:;" class="btn_ly_close"><span class="spr_page">close popup</span></a>
+		<div class="ly_content">
+			<div id="section-box">
+			<section class="fade slider">		
+			</section>      
+			</div>            
+	    	<div class="share_area rrssb-buttons">
+		        <span class="rrssb-facebook">
+		          <a href="#" class="facebook"><span class="spr_page">facebook</span></a>
+		        </span>
+		        <span class="rrssb-twitter">
+		          <a href="#" class="twitter"><span class="spr_page">twitter</span></a>
+		        </span>
+		        <span class="rrssb-vk">
+		          <a href="#" class="vk"><span class="spr_page">vk</span></a>
+		        </span>                    
+	    	</div>
+		</div>
+	</div>         
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="/{# LANG #}/js/media.js"></script>
+<!--#include virtual="inc/foot.html"-->
+</body>
+</html>
+

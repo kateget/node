@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Official PUBG on mobile</title>
+        <!--#if expr="$QUERY_STRING = /path=(.+)/" -->
+        <!--#set var="path" value="$1" -->
+        <!--#endif -->
+        <!--#include file="${path}?flag=head" -->
+        <!--#include virtual="inc/header.shtml"-->
+    </head>
+    <body>
+        <!--#include virtual="inc/fbshare.html"-->
+        <!--#include virtual="inc/nav.html"-->
+        <div class="wrap">
+            <div class="page_top news_top">
+                <h2 class="news_tit spr_page">NEWS</h2>
+            </div>
+            <div class="detail_main">
+                <a href="/{# LANG #}/news.shtml" class="btn_back">BACK</a>
+                <!--#include file="${path}?flag=body" -->
+                <a href="/{# LANG #}/news.shtml" class="btn_come">BACK</a>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/{# LANG #}/js/news_details.js"></script>
+        <!--#include virtual="inc/foot.html"-->
+    </body>
+</html>
+

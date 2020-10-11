@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+	<!--#include virtual="/{# LANG #}/m/inc/header.html"-->
+	<title>{# 标题 #}</title>
+	<meta property="og:site_name" content="Battlegrounds Mobile">
+	<meta property="og:title" content="Battlegrounds Mobile">
+	<meta property="og:description" content="Battlegrounds Mobile">
+	<link rel="stylesheet" href="css/index.css" />
+	<!--
+	<link href="plugins/scroll/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	-->
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="page-bg1">
+			<a href="/">
+				<img class="logo" src="images/icon.png" />
+			</a>
+			<div class="title">
+				<div class="title1">PLAYERUNKNOWN'S BATTLEGROUNDS MOBILE</div>
+				<div class="title2">OFFICIAL LICENSED MOBILE PUBG</div>
+			</div>
+			<a href="javascript:pop_vid('https://www.youtube.com/embed/CLbhbJrWd9I')">
+				<img class="playvideo" src="images/play.png" />
+			</a>
+			<img class="biglogo" src="images/biglogo.png" />
+			<a href="">
+				<img class="ios" src="images/ios.png" />
+			</a>
+			<a href="">
+				<img class="gp" src="images/gp.png" />
+			</a>
+			<div class="desc">
+				{# 关联中国账号获得特别礼物 #}
+			</div>
+			<a href="javascript:pop_act();">
+				<img class="special" src="images/special.png">
+			</a>
+			<div class="versioncode">
+				<div class="versioncodedesc">
+					<span>{# 中国版本ID #}</span>
+					<span>
+						<a href="javascript:pop_act();">
+							<img class="faq" src="images/faq.png" />
+						</a>
+					</span>
+				</div>
+				<div class="input">
+					<input placeholder="{# 角色ID #}" id="chinese_id" />
+				</div>
+				<div class="versioncodedesc">
+					<span>{# 国际版本ID #}</span>
+					<span>
+						<a href="javascript:pop_act();">
+							<img class="faq" src="images/faq.png" />
+						</a>
+					</span>
+				</div>
+				<div class="input">
+					<input placeholder="Character ID" id="global_id" />
+				</div>
+			</div>
+			<a href="javascript:migrate();" class="link">
+				{# 关联 #}
+			</a>
+			<img class="bottomlogo" src="images/bottomlogo.png">
+		</div>
+	</div>
+	<!--video-->
+	<div class="b_bg" style="display: none;"></div>
+	<div class="pop_vid" style="display: none;">
+		<a href="javascript:hidepop('.pop_vid');" class="close">×</a>
+	</div>
+	<!--pop-->
+	<div class="pop_act" style="display: none;">
+		<div class="actbg">
+			<div class="acttitle">{# 活动说明 #}</div>
+			<div class="actmain">
+				<p>{# 亲爱的玩家，下载国际版PUBG Mobile游戏，在此页面填写你的国际版角色ID及中国版角色ID，即可在国际版获得惊喜奖品，感谢你对PUBG Moilbe的支持。 #}</p>
+				<br/>
+				<p>{# 角色ID获取方式：#}</p>
+				<img src="./images/guide-1.png"/><br/>
+				<img src="./images/guide-2.png"/>
+			</div>
+			<a href="javascript:hidepop('.pop_act');">
+				<img src="images/close.png" class="actclose" />
+			</a>
+		</div>
+	</div>
+	<!--alert-->
+	<div class="pop_alert" style="display: none;">
+		<div class="alertbg">
+			<div class="alertmain">
+
+			</div>
+			<a href="javascript:hidepop('.pop_alert');">
+				<img src="images/ok.png" class="alertok" />
+			</a>
+			<a href="javascript:hidepop('.pop_alert');">
+				<img src="images/close.png" class="alertclose" />
+			</a>
+		</div>
+	</div>
+
+
+</body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script type="text/javascript" src="plugins/scroll/jquery.mCustomScrollbar.min.js"></script>
+-->
+<script src="./index.js"></script>
+<!--#include virtual="/{# LANG #}/inc/stats.shtml" -->
