@@ -1,0 +1,119 @@
+-------------------------------------------------------------------------
+1.typescript 安装
+npm install typescript -g
+-------------------------------------------------------------------------
+2.ts-node 安装与使用
+npm install -g ts-node
+运行ts代码
+ts-node Demo1.ts
+-------------------------------------------------------------------------
+参考技术胖文章---https://juejin.im/post/6876240277208563720
+基础：
+== 1.常量
+const count: number = 1
+== 自定义静态类型
+interface XiaoJieJie {
+  uname: string;
+  age: number;
+}
+
+const xiaohong: XiaoJieJie = {
+  uname: "小红",
+  age: 18,
+};
+== 2.对象类型
+== 2.1对象类型
+const teacher: {
+    userName: string,
+    age: number
+} = {
+    userName: 'demo',
+    age: 18
+}
+== 2.2数组
+const arr: string[] = ['demo1','demo2'] // 必须是字符串的数组
+== 2.3类的形式定义变量
+const Person {}
+const demo: Person = new Person();
+== 2.4函数类型定义变量
+const demo: () => string = () => {
+  return "大脚";
+};
+-------------------------------------------------------------------------
+类型注解和类型推断
+let count: number
+count = 1
+明确指出当前类型为数字，这种就叫类型注解
+let count = 123
+把鼠标放上去，ts把变量注释为数字类型，这种就是类型推断
+-------------------------------------------------------------------------
+函数返回和返回类型定义
+== 1.简单类型定义
+function getTotal(one: number, two: number): number {
+  return one + two;
+}
+
+const total = getTotal(1, 2);
+设置返回值类型
+== 2.函数无返回值时定义方法
+function sayHello(): void {
+  console.log("hello world");
+}
+如果这样定义后，你再加入任何返回值，程序都会报错。
+== never 返回值类型
+如果一个函数是永远也执行不完的，就可以定义返回值为never，那什么样的函数是永远也执行不完的那?我们先来写一个这样的函数(比如执行执行的时候，抛出了异常，这时候就无法执行完了)。
+function errorFuntion(): never {
+  throw new Error();
+  console.log("Hello World");
+}
+还有一种是一直循环，也是我们常说的死循环，这样也运行不完，比如下面的代码：
+function forNever(): never {
+  while (true) {}
+  console.log("Hello JSPang");
+}
+== 函数参数为对象(解构)时
+function add({ one: number, two: number }) {
+  return one + two;
+}
+
+const total = add({ one: 1, two: 2 });
+这种写法是错误的
+*******
+正确写法：
+function add({ one, two }: { one: number, two: number }): number {
+  return one + two;
+}
+
+const three = add({ one: 1, two: 2 })
+
+function getNumber({ one }: { one: number }): number {
+  return one;
+}
+
+const one = getNumber({ one: 1 });
+-------------------------------------------------------------------------
+TypeScript 中数组类型的定义
+== 1.一般数组类型的定义
+const numberArr = [1, 2, 3];
+这个时候类型是ts自己推断出来的
+const numberArr: number[] = [1, 2, 3];
+== 2.多类型数组
+const arr: (number | string)[] = [1, "string", 2];
+== 3.数组中对象类型的定义
+3.1 类型别名
+type Lady = { name: string, age: Number };
+或者： class Lady = { name: string, age: Number };也是可以的
+
+const xiaoJieJies: Lady[] = [
+  { name: "刘英", age: 18 },
+  { name: "谢大脚", age: 28 },
+];
+3.2 元组的基本应用
+const xiaojiejie: (string | number)[] = ["dajiao", 28, "teacher"];
+普通数组，并不能区分每个位置的元素类型,即使这样写，依然不会报错
+const xiaojiejie: [string, string, number] = ["dajiao", "teacher", 28];
+元组能很好的限制相应位置的元素类别，如果需要使用严谨的结构，可以使用元组
+
+
+
+
