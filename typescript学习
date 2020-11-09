@@ -248,3 +248,35 @@ class XiaoJieJie extends Lady {
     return super.sayHello() + "。你好！";
   }
 }
+-------------------------------------------------------------------------
+TypeScript 中类的访问类型
+1.public
+2.private
+3.protected
+-------------------------------------------------------------------------
+TypeScript 类的构造函数
+1.类的构造函数
+class Person{
+    constructor(public name:string){
+    }
+}
+
+const person= new Person('jspang')
+console.log(person.name)
+构造函数定义后，赋值
+2.类继承中的构造器写法
+子类如果有构造函数就必须用super调用父元素的构造函数
+class Person{}
+
+class Teacher extends Person{
+    constructor(public age:number){
+        super()
+    }
+}
+
+const teacher = new Teacher(18)
+console.log(teacher.age)
+
+-------------------------------------------------------------------------
+TypeScript 类的 Getter、Setter 和 static 使用
+1.类的 Getter 和 Setter
