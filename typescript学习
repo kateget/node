@@ -1,3 +1,4 @@
+该文为学习总结与简述
 -------------------------------------------------------------------------
 1.typescript 安装
 npm install typescript -g
@@ -101,8 +102,8 @@ const numberArr: number[] = [1, 2, 3];
 const arr: (number | string)[] = [1, "string", 2];
 == 3.数组中对象类型的定义
 3.1 类型别名
-type Lady = { name: string, age: Number };
-或者： class Lady = { name: string, age: Number };也是可以的
+type Lady = { name: string, age: Number }; 类型别名必须以type开头
+或者： class Lady = { name: string, age: Number }; 用类定义也是可以的，效果与别名一样
 
 const xiaoJieJies: Lady[] = [
   { name: "刘英", age: 18 },
@@ -113,7 +114,137 @@ const xiaojiejie: (string | number)[] = ["dajiao", 28, "teacher"];
 普通数组，并不能区分每个位置的元素类型,即使这样写，依然不会报错
 const xiaojiejie: [string, string, number] = ["dajiao", "teacher", 28];
 元组能很好的限制相应位置的元素类别，如果需要使用严谨的结构，可以使用元组
+-------------------------------------------------------------------------
+TypeScript 中的 interface 接口
+== 1.Interface 接口初步了解
+重复的注解可以提出来写出一个接口
+interface Girl {
+  name: string;
+  age: number;
+  bust: number;
+}
+const screenResume = (girl: Girl) => {
+  girl.age < 24 && girl.bust >= 90 && console.log(girl.name + "进入面试");
+  girl.age > 24 || (girl.bust < 90 && console.log(girl.name + "你被淘汰"));
+};
 
+const getResume = (girl: Girl) => {
+  console.log(girl.name + "年龄是：" + girl.age);
+  console.log(girl.name + "胸围是：" + girl.bust);
+};
+const girl = {
+  name: "大脚",
+  age: 18,
+  bust: 94,
+};
 
+screenResume(girl);
+getResume(girl);
+== 2.接口和类型别名的区别
+类型别名可以直接给类型，比如string，而接口必须代表对象。
+例如：
+别名---
+type Girl1 = stirng;
+接口---只能写成
+const girl = {
+  name: "大脚",
+  age: 18,
+  bust: 94,
+};
+== 3.接口非必选值得定义
+interface Girl {
+  name: string;
+  age: number;
+  bust: number;
+  waistline?: number;
+}
+waistline 就为可选值
+== 4.允许加入任意值
+interface Girl {
+  name: string;
+  age: number;
+  bust: number;
+  waistline?: number;
+  [propname: string]: any;
+}
+意思：属性的名称是字符串，值为任意类型
+const girl = {
+  name: "大脚",
+  age: 18,
+  bust: 94,
+  waistline: 21,
+  sex: "女",
+};
+相应的对象可以为上述
+== 5.接口里的方法
+interface Girl {
+  name: string;
+  age: number;
+  bust: number;
+  waistline?: number;
+  [propname: string]: any;
+  say(): string;
+}
+== 6.接口和类的约束
+class XiaoJieJie implements Girl {}
+这样写会报错，需要把类写完整点
+class XiaoJieJie implements Girl {
+  name = "刘英";
+  age = 18;
+  bust = 90;
+  say() {
+    return "欢迎光临 ，红浪漫洗浴！！";
+  }
+}
+== 7.接口继承
+interface Teacher extends Girl {
+  teach(): string;
+}
+-------------------------------------------------------------------------
+TypeScript 中类的概念和使用
+== 1.类的基本使用
+class Lady {
+  content = "Hi，帅哥";
+  sayHello() {
+    return this.content;
+  }
+}
 
+const goddess = new Lady();
+console.log(goddess.sayHello());
+== 2.类的继承
+class Lady {
+  content = "Hi，帅哥";
+  sayHello() {
+    return this.content;
+  }
+}
+class XiaoJieJie extends Lady {
+  sayLove() {
+    return "I love you";
+  }
+}
 
+const goddess = new XiaoJieJie();
+console.log(goddess.sayHello());
+console.log(goddess.sayLove());
+
+== 3.类的重写
+class XiaoJieJie extends Lady {
+  sayLove() {
+    return "I love you!";
+  }
+  sayHello() {
+    return "Hi , honey!";
+  }
+}
+== 4.super 关键字的使用
+super代表父类的方法
+class XiaoJieJie extends Lady {
+  sayLove() {
+    return "I love you!";
+  }
+  sayHello() {
+    return super.sayHello() + "。你好！";
+  }
+}
