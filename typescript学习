@@ -202,6 +202,7 @@ interface Teacher extends Girl {
 }
 -------------------------------------------------------------------------
 TypeScript 中类的概念和使用
+
 == 1.类的基本使用
 class Lady {
   content = "Hi，帅哥";
@@ -255,6 +256,7 @@ TypeScript 中类的访问类型
 3.protected
 -------------------------------------------------------------------------
 TypeScript 类的构造函数
+
 1.类的构造函数
 class Person{
     constructor(public name:string){
@@ -279,4 +281,77 @@ console.log(teacher.age)
 
 -------------------------------------------------------------------------
 TypeScript 类的 Getter、Setter 和 static 使用
-1.类的 Getter 和 Setter
+
+== 1.类的 Getter 和 Setter
+类中似有属性只能通过getter和setter来获取与设置
+class Xiaojiejie {
+  constructor(private _age:number){}
+  get age(){
+      return this._age-10
+  }
+  set age(age:number){
+    this._age=age
+  }
+}
+
+const dajiao = new Xiaojiejie(28)
+dajiao.age=25
+console.log(dajiao.age)
+== 2.类中的 static
+class Girl {
+  static sayLove() {
+    return "I Love you";
+  }
+}
+console.log(Girl.sayLove());
+静态方法可以通过方法直接调用
+-------------------------------------------------------------------------
+类的只读属性和抽象类
+
+== 1.类里的只读属性 readonly
+
+class Person {
+    public readonly _name :string;
+    constructor(name:string ){
+        this._name = name;
+    }
+}
+
+const person = new Person('jspang')
+person._name= '谢广坤' //报错
+console.log(person._name)
+
+只读属性，只能读取，不能更改，否者会报错
+
+== 2.抽象类的使用
+// 抽象类开头关键字为 abstract 
+abstract class Girl{
+    abstract skill()  //因为没有具体的方法，所以我们这里不写括号
+
+}
+
+class Waiter extends Girl{
+    skill(){
+        console.log('大爷，请喝水！')
+    }
+}
+
+class BaseTeacher extends Girl{
+    skill(){
+        console.log('大爷，来个泰式按摩吧！')
+    }
+}
+
+class seniorTeacher extends Girl{
+    skill(){
+        console.log('大爷，来个SPA全身按摩吧！')
+    }
+}
+
+-------------------------------------------------------------------------
+配置文件-初识 tsconfig.json
+== 1.生成 tsconfig.json 文件
+通过命令" tsc --init " 生成 tsconfig.json 配置文件
+tsc demo.ts 运行文件会生成编译后的js文件
+ts-node 只运行，不编译
+
