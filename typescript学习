@@ -352,6 +352,7 @@ class seniorTeacher extends Girl{
 配置文件-初识 tsconfig.json
 == 1.生成 tsconfig.json 文件
 通过命令" tsc --init " 生成 tsconfig.json 配置文件
-tsc demo.ts 运行文件会生成编译后的js文件
+tsc demo.ts 运行文件会生成编译后的js文件,这个时候tsconfig.json不会起作用，运行tsc后，配置文件才会生效
 ts-node 只运行，不编译
+== 2.include 、exclude 和 files
 
