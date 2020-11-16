@@ -355,4 +355,43 @@ class seniorTeacher extends Girl{
 tsc demo.ts 运行文件会生成编译后的js文件,这个时候tsconfig.json不会起作用，运行tsc后，配置文件才会生效
 ts-node 只运行，不编译
 == 2.include 、exclude 和 files
+使用include
+{
+  "include":["demo.ts"],
+  "compilerOptions": {
+      //any something
+      //........
+  }
+}
+
+这样引入后，编译的时候就只会编译demo.ts文件
+使用exclude(不包括)
+{
+   "exclude":["demo2.ts"],
+  "compilerOptions": {
+      //any something
+      //........
+  }
+}
+效果同样不引入demo2.ts
+使用files
+效果等同include
+-------------------------------------------------------------------------
+配置文件-初识 compilerOptions 配置项
+ts文件编译配置项
+== 1.removeComments 属性
+移除注释
+== 2.strict 属性
+开启严格模式
+== 3.noImplicitAny 属性
+允许你的注解类型any不用特意表明
+你可以简单的理解为，设置为 true，就是必须明确置顶 any 类型的值。
+== 4.strictNullChecks 属性
+不强制检查 NULL 类型。
+const jspang: string = null;
+开的时候是会报错的
+== 5.ts-node 遵循 tsconfig.js 文件
+tsc fileName 是没办法遵循tsconfig.js文件的，ts-node遵循
+
+
 
