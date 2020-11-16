@@ -392,6 +392,4 @@ const jspang: string = null;
 开的时候是会报错的
 == 5.ts-node 遵循 tsconfig.js 文件
 tsc fileName 是没办法遵循tsconfig.js文件的，ts-node遵循
-
-
-
+-------------------------------------------------------------------------
