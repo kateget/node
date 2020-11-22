@@ -549,4 +549,113 @@ class SelectGirl<T extends number | string> {
 限定类型只能为number和string
 -------------------------------------------------------------------------
 初识命名空间-Namespace
+== 1.搭建浏览器开发环境步骤
+1. 建立好文件夹后，打开 VSCode，把文件夹拉到编辑器当中，然后打开终端，运行npm init -y,创建package.json文件。
+2. 生成文件后，我们接着在终端中运行tsc -init,生成tsconfig.json文件。
+3. 新建src和build文件夹，再建一个index.html文件。
+4. 在src目录下，新建一个page.ts文件，这就是我们要编写的ts文件了。
+5. 配置tsconfig.json文件，设置outDir和rootDir(在 15 行左右)，也就是设置需要编译的文件目录，和编译好的文件目录。
+6. 然后编写index.html，引入<script src="./build/page.js"></script>,当让我们现在还没有page.js文件。
+7. 编写page.ts文件，加入一句输出console.log('jspang.com'),再在控制台输入tsc,就会生成page.js文件
+8. 再到浏览器中查看index.html文件，如果按F12可以看到jspang.com，说明我们的搭建正常了。
 
+== 2.没有命名空间时的问题
+为了你更好的理解，先写一下这样代码，用类的形式在index.html中实现header,content和Footer部分，类似我们常说的模板。
+
+class Header {
+  constructor() {
+    const elem = document.createElement("div");
+    elem.innerText = "This is Header";
+    document.body.appendChild(elem);
+  }
+}
+
+class Content {
+  constructor() {
+    const elem = document.createElement("div");
+    elem.innerText = "This is Content";
+    document.body.appendChild(elem);
+  }
+}
+
+class Footer {
+  constructor() {
+    const elem = document.createElement("div");
+    elem.innerText = "This is Footer";
+    document.body.appendChild(elem);
+  }
+}
+
+class Page {
+  constructor() {
+    new Header();
+    new Content();
+    new Footer();
+  }
+}
+页面引入
+<body>
+  <script>new Page();</script>
+</body>
+
+== 3.命名空间的使用
+namespace Home {
+  class Header {
+    constructor() {
+      const elem = document.createElement("div");
+      elem.innerText = "This is Header";
+      document.body.appendChild(elem);
+    }
+  }
+
+  class Content {
+    constructor() {
+      const elem = document.createElement("div");
+      elem.innerText = "This is Content";
+      document.body.appendChild(elem);
+    }
+  }
+
+  class Footer {
+    constructor() {
+      const elem = document.createElement("div");
+      elem.innerText = "This is Footer";
+      document.body.appendChild(elem);
+    }
+  }
+
+  export class Page {
+    constructor() {
+      new Header();
+      new Content();
+      new Footer();
+    }
+  }
+}
+
+-------------------------------------------------------------------------
+深入命名空间-Namespace
+== 1.用命名空间实现组件化
+后续代码过多，清参考js胖连接文章
+-------------------------------------------------------------------------
+用 Parcel 打包 TypeScript 代码
+== 1.建立一个新项目
+1. 教学需要，这里我们重新建立一个项目TSTest,在桌面新建立一个文件夹，然后在VSCode中打开。
+2. 打开终端，输入npm init -y,创建package.json文件
+3. 在终端中输入tsc --init,创建tsconfig.json文件
+4. 修改tsconfig.json配置rootDir和outDir.
+5. 新建src文件夹，在里边建立index.html,page.ts文件
+6. 编写index.html文件，并引入page.ts文件
+7. 编写page.ts文件
+== 2.Parcel 的安装和使用
+yarn add --dev parcel@next
+
+{
+
+  "scripts": {
+    "test": "parcel ./src/index.html"
+  },
+}
+
+yarn test
+生成地址
